@@ -1,4 +1,7 @@
-
+<?php
+use yii\bootstrap\ActiveForm;
+use yii\helpers\Html;
+?>
 <!-- ============================================================= HEADER : END ============================================================= -->       <!-- ========================================= MAIN ========================================= -->
 <main id="authentication" class="inner-bottom-md">
     <div class="container">
@@ -52,17 +55,26 @@
                 <section class="section register inner-left-xs">
                     <h2 class="bordered">新建账户</h2>
                     <p>创建一个属于你自己的账户</p>
-
-                    <form role="form" class="register-form cf-style-1">
-                        <div class="field-row">
-                            <label>电子邮箱</label>
-                            <input type="text" class="le-input">
-                        </div><!-- /.field-row -->
-
+<?php
+if (Yii::$app->session->hasFlash('info')) {
+    echo Yii::$app->session->getFlash('info');
+}
+$form = ActiveForm::begin([
+    'fieldConfig' => [
+        'template' => '<div class="field-row">{label}{input}</div>{error}',
+    ],
+    'options'     => [
+        'class' => 'register-form cf-style-1',
+        'role'  => 'form',
+    ],
+    'action'      => ['member/reg'],
+]);
+?>
+                        <?php echo $form->field($reg_model, 'useremail')->textInput(['class' => 'le-input']); ?>
                         <div class="buttons-holder">
-                            <button type="submit" class="le-button huge">注册</button>
+                            <?php echo Html::submitButton('注册', ['class' => 'le-button huge']); ?>
                         </div><!-- /.buttons-holder -->
-                    </form>
+                    <?php ActiveForm::end();?>
 
                     <h2 class="semi-bold">加入我们您将会享受到前所未有的购物体验 :</h2>
 

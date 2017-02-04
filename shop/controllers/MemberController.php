@@ -2,6 +2,7 @@
 namespace app\controllers;
 
 use app\models\User;
+use Yii;
 use yii\web\Controller;
 
 class MemberController extends Controller
@@ -10,7 +11,11 @@ class MemberController extends Controller
     public function actionAuth()
     {
         $this->layout = "layout2";
-        return $this->render('auth');
+        $auth_model = new User;
+        if ($auth_model->login($data)) {
+            $this->redirect('[index/index]');
+        }
+        return $this->render('auth',['auth_model'=>$auth_model]);
     }
     public function actionReg()
     {
