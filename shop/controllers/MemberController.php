@@ -13,7 +13,9 @@ class MemberController extends Controller
         $this->layout = "layout2";
         $auth_model = new User;
         if ($auth_model->login($data)) {
-            $this->redirect('[index/index]');
+            // $this->redirect('[index/index]');
+            $url = Yii::$app->session->getFlash('referrer');
+                return $this->redirect($url);
         }
         return $this->render('auth',['auth_model'=>$auth_model]);
     }
