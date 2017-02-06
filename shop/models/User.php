@@ -23,6 +23,7 @@ class User extends ActiveRecord
             'userpass'  => '密码',
             'repass'    => '确认密码',
             'useremail' => '用户邮箱',
+            'loginname' => '用户名/邮箱',
 
         ];
 
@@ -39,9 +40,29 @@ class User extends ActiveRecord
             ['userpass', 'required', 'message' => '密码不能为空', 'on' => ['reg', 'regbymail']],
             ['repass', 'required', 'message' => '确认密码不能为空', 'on' => ['reg', 'qqreg']],
             ['repass', 'compare', 'compareAttribute' => 'userpass', 'message' => '两次密码输入不一致', 'on' => ['reg', 'qqreg']],
+            ['userpass','validatePass','on'=>['login']],
 
         ];
 
+    }
+    /**
+     * 密码验证方法
+     * 2017年2月6日
+     * @return [type] [description]
+     */
+    public function validatePass()
+    {
+        if (!$this->hasErrors()) {
+           $loginname = "username";
+           if (preg_match('/@/',$this->loginname)) {
+               $loginname="useremail";
+           }
+           //
+        $data = self::find()->where($loginname.' = :loginname and userpass = :pass', [':loginname' => $this->loginname, ':pass' => md5($this->userpass)])->one();
+           if (is_null($data)) {
+               $this->addError("userpass","用户名或者密码错误！");
+           }
+        }
     }
     /**
      * 新用户注册的函数
@@ -67,11 +88,11 @@ class User extends ActiveRecord
      * 系统登录的方法
      * 2017年2月4日 12:39:08
      */
-    public functin login($data)
+    public function login($data)
     {
         $this->scenario = 'login';
         if ($this->load($data) && $this->validate()) {
-            $lifetime = $this->$rememberMe ? 24*3600 :0 ;
+            $lifetime = $this->rememberMe ? 24*3600 :0 ;
             $session = Yii::$app->session;
             session_set_cookie_params($lifetime);
             $session['loginname'] = $this->loginname;
@@ -79,6 +100,16 @@ class User extends ActiveRecord
             return (bool)$session['isLogin'];
         }
         return false;
+    }
+    /**
+     * 退出登录
+     * 2017年2月6日 22:25:30
+     * @return [type] [description]
+     */
+    public function logout(){
+        if (Yii::$app->session->remove('loginname')&&Yii::$app->session->remove('isLogin')) {
+            return true;
+        }
     }
     //两表联合查询  用法特殊需要记忆关注
     //2017年1月31日 23:17:10

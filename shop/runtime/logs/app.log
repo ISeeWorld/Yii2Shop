@@ -17423,3 +17423,1261 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1486177157.62
     'REQUEST_TIME' => 1486177157
 ]
+2017-02-06 20:55:15 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'functin' (T_STRING), expecting variable (T_VARIABLE)' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\models\User.php:70
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-06 20:55:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'member/reg'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '49372'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=member%2Freg'
+    'REQUEST_URI' => '/index.php?r=member%2Freg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486385715.637
+    'REQUEST_TIME' => 1486385715
+]
+2017-02-06 20:55:23 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'functin' (T_STRING), expecting variable (T_VARIABLE)' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\models\User.php:70
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-06 20:55:23 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'member/auth'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '49392'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=member%2Fauth'
+    'REQUEST_URI' => '/index.php?r=member%2Fauth'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486385723.681
+    'REQUEST_TIME' => 1486385723
+]
+2017-02-06 20:55:28 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'functin' (T_STRING), expecting variable (T_VARIABLE)' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\models\User.php:70
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-06 20:55:28 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'member/reg'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '49398'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=member%2Freg'
+    'REQUEST_URI' => '/index.php?r=member%2Freg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486385728.092
+    'REQUEST_TIME' => 1486385728
+]
+2017-02-06 21:02:08 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ':'' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\controllers\MemberController.php:17
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-06 21:02:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'member/reg'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '49578'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=member%2Freg'
+    'REQUEST_URI' => '/index.php?r=member%2Freg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486386128.28
+    'REQUEST_TIME' => 1486386128
+]
+2017-02-06 21:03:18 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'functin' (T_STRING), expecting variable (T_VARIABLE)' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\models\User.php:70
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-06 21:03:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'member/reg'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '49580'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=member%2Freg'
+    'REQUEST_URI' => '/index.php?r=member%2Freg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486386198.624
+    'REQUEST_TIME' => 1486386198
+]
+2017-02-06 21:13:12 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\views\member\auth.php:36
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\views\member\auth.php(36): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\ProgramFiles...', 36, Array)
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(325): require('D:\\ProgramFiles...')
+#2 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\ProgramFiles...', Array)
+#3 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\ProgramFiles...', Array, Object(app\controllers\MemberController))
+#4 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('auth', Array, Object(app\controllers\MemberController))
+#5 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\controllers\MemberController.php(38): yii\base\Controller->render('auth', Array)
+#6 [internal function]: app\controllers\MemberController->actionReg()
+#7 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('reg', Array)
+#10 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('member/reg', Array)
+#11 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2017-02-06 21:13:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'member/reg'
+]
+
+$_POST = [
+    '_csrf' => 'YTQyNkcuYTEDbQVnNh8RAzV1XGUkZFVlInNdfiwXC2E4fFNdFhssZA=='
+    'User' => [
+        'useremail' => 'l1569841@mvrht.com'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u5lr6fduf34a41cprqu8faclg0'
+    '_csrf' => '54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/index.php?r=member%2Freg'
+    'HTTP_COOKIE' => 'PHPSESSID=u5lr6fduf34a41cprqu8faclg0; _csrf=54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '107'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '49738'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=member%2Freg'
+    'REQUEST_URI' => '/index.php?r=member%2Freg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486386791.392
+    'REQUEST_TIME' => 1486386791
+]
+2017-02-06 21:14:16 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: auth_model' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\views\member\auth.php:36
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\views\member\auth.php(36): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\ProgramFiles...', 36, Array)
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(325): require('D:\\ProgramFiles...')
+#2 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\ProgramFiles...', Array)
+#3 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\ProgramFiles...', Array, Object(app\controllers\MemberController))
+#4 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('auth', Array, Object(app\controllers\MemberController))
+#5 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\controllers\MemberController.php(38): yii\base\Controller->render('auth', Array)
+#6 [internal function]: app\controllers\MemberController->actionReg()
+#7 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('reg', Array)
+#10 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('member/reg', Array)
+#11 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2017-02-06 21:14:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'member/reg'
+]
+
+$_POST = [
+    '_csrf' => 'YTQyNkcuYTEDbQVnNh8RAzV1XGUkZFVlInNdfiwXC2E4fFNdFhssZA=='
+    'User' => [
+        'useremail' => 'l1569841@mvrht.com'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u5lr6fduf34a41cprqu8faclg0'
+    '_csrf' => '54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/index.php?r=member%2Freg'
+    'HTTP_COOKIE' => 'PHPSESSID=u5lr6fduf34a41cprqu8faclg0; _csrf=54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '107'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '49745'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=member%2Freg'
+    'REQUEST_URI' => '/index.php?r=member%2Freg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486386855.521
+    'REQUEST_TIME' => 1486386855
+]
+2017-02-06 21:15:36 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: auth_model' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\views\member\auth.php:36
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\views\member\auth.php(36): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\ProgramFiles...', 36, Array)
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(325): require('D:\\ProgramFiles...')
+#2 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\ProgramFiles...', Array)
+#3 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\ProgramFiles...', Array, Object(app\controllers\MemberController))
+#4 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('auth', Array, Object(app\controllers\MemberController))
+#5 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\controllers\MemberController.php(38): yii\base\Controller->render('auth', Array)
+#6 [internal function]: app\controllers\MemberController->actionReg()
+#7 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('reg', Array)
+#10 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('member/reg', Array)
+#11 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2017-02-06 21:15:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'member/reg'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u5lr6fduf34a41cprqu8faclg0'
+    '_csrf' => '54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/index.php?r=member%2Freg'
+    'HTTP_COOKIE' => 'PHPSESSID=u5lr6fduf34a41cprqu8faclg0; _csrf=54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '49748'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=member%2Freg'
+    'REQUEST_URI' => '/index.php?r=member%2Freg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486386936.236
+    'REQUEST_TIME' => 1486386936
+]
+2017-02-06 21:15:48 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: auth_model' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\views\member\auth.php:36
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\views\member\auth.php(36): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\ProgramFiles...', 36, Array)
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(325): require('D:\\ProgramFiles...')
+#2 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\ProgramFiles...', Array)
+#3 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\ProgramFiles...', Array, Object(app\controllers\MemberController))
+#4 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('auth', Array, Object(app\controllers\MemberController))
+#5 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\controllers\MemberController.php(38): yii\base\Controller->render('auth', Array)
+#6 [internal function]: app\controllers\MemberController->actionReg()
+#7 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('reg', Array)
+#10 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('member/reg', Array)
+#11 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2017-02-06 21:15:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'member/reg'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u5lr6fduf34a41cprqu8faclg0'
+    '_csrf' => '54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/'
+    'HTTP_COOKIE' => 'PHPSESSID=u5lr6fduf34a41cprqu8faclg0; _csrf=54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '49755'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=member%2Freg'
+    'REQUEST_URI' => '/index.php?r=member%2Freg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486386948.77
+    'REQUEST_TIME' => 1486386948
+]
+2017-02-06 21:20:07 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: rememberMe' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\models\User.php:75
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\models\User.php(75): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\ProgramFiles...', 75, Array)
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\controllers\MemberController.php(19): app\models\User->login(Array)
+#2 [internal function]: app\controllers\MemberController->actionAuth()
+#3 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('auth', Array)
+#6 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('member/auth', Array)
+#7 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-02-06 21:20:06 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'member/auth'
+]
+
+$_POST = [
+    '_csrf' => 'Rlh2QVJRamckAUEQI2AaVRIZGBIxG14zBR8ZCTloADcfEBcqA2QnMg=='
+    'User' => [
+        'loginname' => 'imooctest_5898749a26b0c'
+        'userpass' => '5898749a26b0c'
+        'rememberMe' => '1'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u5lr6fduf34a41cprqu8faclg0'
+    '_csrf' => '54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/index.php?r=member%2Freg'
+    'HTTP_COOKIE' => 'PHPSESSID=u5lr6fduf34a41cprqu8faclg0; _csrf=54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '189'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '49814'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=member%2Fauth'
+    'REQUEST_URI' => '/index.php?r=member%2Fauth'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486387206.758
+    'REQUEST_TIME' => 1486387206
+]
+2017-02-06 21:22:09 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: rememberMe' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\models\User.php:75
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\models\User.php(75): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\ProgramFiles...', 75, Array)
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\controllers\MemberController.php(19): app\models\User->login(Array)
+#2 [internal function]: app\controllers\MemberController->actionAuth()
+#3 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('auth', Array)
+#6 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('member/auth', Array)
+#7 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-02-06 21:22:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'member/auth'
+]
+
+$_POST = [
+    '_csrf' => 'Rlh2QVJRamckAUEQI2AaVRIZGBIxG14zBR8ZCTloADcfEBcqA2QnMg=='
+    'User' => [
+        'loginname' => 'imooctest_5898749a26b0c'
+        'userpass' => '5898749a26b0c'
+        'rememberMe' => '1'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u5lr6fduf34a41cprqu8faclg0'
+    '_csrf' => '54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/index.php?r=member%2Freg'
+    'HTTP_COOKIE' => 'PHPSESSID=u5lr6fduf34a41cprqu8faclg0; _csrf=54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '189'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '49820'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=member%2Fauth'
+    'REQUEST_URI' => '/index.php?r=member%2Fauth'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486387328.061
+    'REQUEST_TIME' => 1486387328
+]
+2017-02-06 21:22:23 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: rememberMe' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\models\User.php:75
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\models\User.php(75): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\ProgramFiles...', 75, Array)
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\controllers\MemberController.php(19): app\models\User->login(Array)
+#2 [internal function]: app\controllers\MemberController->actionAuth()
+#3 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('auth', Array)
+#6 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('member/auth', Array)
+#7 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-02-06 21:22:22 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'member/auth'
+]
+
+$_POST = [
+    '_csrf' => 'S0RndGY2WVUpHVAlFwcpZx8FCScFfG0BCAMIPA0PMwUSDAYfNwMUAA=='
+    'User' => [
+        'loginname' => '123@qq.com'
+        'userpass' => '123'
+        'rememberMe' => '1'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u5lr6fduf34a41cprqu8faclg0'
+    '_csrf' => '54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/index.php?r=member%2Freg'
+    'HTTP_COOKIE' => 'PHPSESSID=u5lr6fduf34a41cprqu8faclg0; _csrf=54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '168'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '49826'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=member%2Fauth'
+    'REQUEST_URI' => '/index.php?r=member%2Fauth'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486387342.193
+    'REQUEST_TIME' => 1486387342
+]
+2017-02-06 21:49:44 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\models\User.php:61
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-06 21:49:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'member/reg'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u5lr6fduf34a41cprqu8faclg0'
+    '_csrf' => '54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/'
+    'HTTP_COOKIE' => 'PHPSESSID=u5lr6fduf34a41cprqu8faclg0; _csrf=54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '49932'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=member%2Freg'
+    'REQUEST_URI' => '/index.php?r=member%2Freg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486388984.847
+    'REQUEST_TIME' => 1486388984
+]
+2017-02-06 21:52:42 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: reg_model' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\views\member\auth.php:36
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\views\member\auth.php(36): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\ProgramFiles...', 36, Array)
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(325): require('D:\\ProgramFiles...')
+#2 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\ProgramFiles...', Array)
+#3 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\ProgramFiles...', Array, Object(app\controllers\MemberController))
+#4 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('auth', Array, Object(app\controllers\MemberController))
+#5 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\controllers\MemberController.php(23): yii\base\Controller->render('auth', Array)
+#6 [internal function]: app\controllers\MemberController->actionAuth()
+#7 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('auth', Array)
+#10 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('member/auth', Array)
+#11 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2017-02-06 21:52:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'member/auth'
+]
+
+$_POST = [
+    '_csrf' => 'OU9ZdUFYLWpbFm4kMGldWG0ONyYiEhk.egg2PSphRzpgBzgeEG1gPw=='
+    'User' => [
+        'loginname' => ''
+        'userpass' => ''
+        'rememberMe' => '1'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u5lr6fduf34a41cprqu8faclg0'
+    '_csrf' => '54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/index.php?r=member%2Freg'
+    'HTTP_COOKIE' => 'PHPSESSID=u5lr6fduf34a41cprqu8faclg0; _csrf=54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '153'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '49944'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=member%2Fauth'
+    'REQUEST_URI' => '/index.php?r=member%2Fauth'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486389161.741
+    'REQUEST_TIME' => 1486389161
+]
+2017-02-06 21:53:22 [127.0.0.1][-][u5lr6fduf34a41cprqu8faclg0][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: reg_model' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\views\member\auth.php:75
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\views\member\auth.php(75): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\ProgramFiles...', 75, Array)
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(325): require('D:\\ProgramFiles...')
+#2 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\ProgramFiles...', Array)
+#3 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\ProgramFiles...', Array, Object(app\controllers\MemberController))
+#4 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('auth', Array, Object(app\controllers\MemberController))
+#5 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\controllers\MemberController.php(23): yii\base\Controller->render('auth', Array)
+#6 [internal function]: app\controllers\MemberController->actionAuth()
+#7 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('auth', Array)
+#10 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('member/auth', Array)
+#11 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2017-02-06 21:53:21 [127.0.0.1][-][u5lr6fduf34a41cprqu8faclg0][info][application] $_GET = [
+    'r' => 'member/auth'
+]
+
+$_POST = [
+    '_csrf' => 'OU9ZdUFYLWpbFm4kMGldWG0ONyYiEhk.egg2PSphRzpgBzgeEG1gPw=='
+    'User' => [
+        'loginname' => ''
+        'userpass' => ''
+        'rememberMe' => '1'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u5lr6fduf34a41cprqu8faclg0'
+    '_csrf' => '54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'loginname' => 'computerobot1@163.com'
+    'isLogin' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/index.php?r=member%2Freg'
+    'HTTP_COOKIE' => 'PHPSESSID=u5lr6fduf34a41cprqu8faclg0; _csrf=54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '153'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '49947'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=member%2Fauth'
+    'REQUEST_URI' => '/index.php?r=member%2Fauth'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486389201.46
+    'REQUEST_TIME' => 1486389201
+]
+2017-02-06 21:54:16 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: auth_model' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\views\member\auth.php:36
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\views\member\auth.php(36): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\ProgramFiles...', 36, Array)
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(325): require('D:\\ProgramFiles...')
+#2 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\ProgramFiles...', Array)
+#3 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\ProgramFiles...', Array, Object(app\controllers\MemberController))
+#4 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('auth', Array, Object(app\controllers\MemberController))
+#5 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\controllers\MemberController.php(38): yii\base\Controller->render('auth', Array)
+#6 [internal function]: app\controllers\MemberController->actionReg()
+#7 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('reg', Array)
+#10 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('member/reg', Array)
+#11 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2017-02-06 21:54:16 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'member/reg'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u5lr6fduf34a41cprqu8faclg0'
+    '_csrf' => '54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/'
+    'HTTP_COOKIE' => 'PHPSESSID=u5lr6fduf34a41cprqu8faclg0; _csrf=54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '49958'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=member%2Freg'
+    'REQUEST_URI' => '/index.php?r=member%2Freg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486389256.048
+    'REQUEST_TIME' => 1486389256
+]
+2017-02-06 21:56:23 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: auth_model' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\views\member\auth.php:36
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\views\member\auth.php(36): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\ProgramFiles...', 36, Array)
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(325): require('D:\\ProgramFiles...')
+#2 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\ProgramFiles...', Array)
+#3 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\ProgramFiles...', Array, Object(app\controllers\MemberController))
+#4 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('auth', Array, Object(app\controllers\MemberController))
+#5 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\controllers\MemberController.php(38): yii\base\Controller->render('auth', Array)
+#6 [internal function]: app\controllers\MemberController->actionReg()
+#7 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('reg', Array)
+#10 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('member/reg', Array)
+#11 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2017-02-06 21:56:23 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'member/reg'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u5lr6fduf34a41cprqu8faclg0'
+    '_csrf' => '54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/'
+    'HTTP_COOKIE' => 'PHPSESSID=u5lr6fduf34a41cprqu8faclg0; _csrf=54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '49997'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=member%2Freg'
+    'REQUEST_URI' => '/index.php?r=member%2Freg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486389383.278
+    'REQUEST_TIME' => 1486389383
+]
+2017-02-06 22:02:41 [127.0.0.1][-][u5lr6fduf34a41cprqu8faclg0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: member/logout' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logout', Array)
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('member/logout', Array)
+#2 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-02-06 22:02:41 [127.0.0.1][-][u5lr6fduf34a41cprqu8faclg0][info][application] $_GET = [
+    'r' => 'member/logout'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u5lr6fduf34a41cprqu8faclg0'
+    '_csrf' => '54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'loginname' => 'computerobot1@163.com'
+    'isLogin' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/index.php?r=member%2Freg'
+    'HTTP_COOKIE' => 'PHPSESSID=u5lr6fduf34a41cprqu8faclg0; _csrf=54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '50041'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=member%2Flogout'
+    'REQUEST_URI' => '/index.php?r=member%2Flogout'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486389761.307
+    'REQUEST_TIME' => 1486389761
+]
+2017-02-06 22:03:06 [127.0.0.1][-][u5lr6fduf34a41cprqu8faclg0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: member/logout' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logout', Array)
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('member/logout', Array)
+#2 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-02-06 22:03:06 [127.0.0.1][-][u5lr6fduf34a41cprqu8faclg0][info][application] $_GET = [
+    'r' => 'member/logout'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u5lr6fduf34a41cprqu8faclg0'
+    '_csrf' => '54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'loginname' => 'computerobot1@163.com'
+    'isLogin' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/index.php?r=member%2Fauth'
+    'HTTP_COOKIE' => 'PHPSESSID=u5lr6fduf34a41cprqu8faclg0; _csrf=54cf1a02f767b3b731fbb691409d4792159c56bdb1cfec998fd263e3f4ea8890a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bY7Qq1p2TAnScJ4TCGoHk9jPYHakQ5MU%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '50052'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=member%2Flogout'
+    'REQUEST_URI' => '/index.php?r=member%2Flogout'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486389786.736
+    'REQUEST_TIME' => 1486389786
+]
+2017-02-06 22:33:55 [127.0.0.1][-][5gr6ppeu1osdh79ugfcq87qng3][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\web\Controller::redirect(), called in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\controllers\MemberController.php on line 44 and defined' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Controller.php:144
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Controller.php(144): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', 'D:\\ProgramFiles...', 144, Array)
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\controllers\MemberController.php(44): yii\web\Controller->redirect()
+#2 [internal function]: app\controllers\MemberController->actionLogout()
+#3 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('member/logout', Array)
+#7 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-02-06 22:33:55 [127.0.0.1][-][5gr6ppeu1osdh79ugfcq87qng3][info][application] $_GET = [
+    'r' => 'member/logout'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '5gr6ppeu1osdh79ugfcq87qng3'
+    '_csrf' => '334fad0066a4237368799995f64dd48d06cd827c8a230a01db09edcf0543d356a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DehLBvKVgPt-tnrtL7JtbVkz-Y2nCcik\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/index.php?r=member%2Freg'
+    'HTTP_COOKIE' => 'PHPSESSID=5gr6ppeu1osdh79ugfcq87qng3; _csrf=334fad0066a4237368799995f64dd48d06cd827c8a230a01db09edcf0543d356a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DehLBvKVgPt-tnrtL7JtbVkz-Y2nCcik%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '50150'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=member%2Flogout'
+    'REQUEST_URI' => '/index.php?r=member%2Flogout'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486391635.42
+    'REQUEST_TIME' => 1486391635
+]
