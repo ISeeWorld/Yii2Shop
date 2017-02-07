@@ -25,6 +25,10 @@ class MemberController extends Controller
         return $this->render('auth',['model'=>$auth_model]);
     
     }
+    /**
+     * 用户注册
+     * @return [type] [description]
+     */
     public function actionReg()
     {
         $this->layout = "layout2";
@@ -38,6 +42,10 @@ class MemberController extends Controller
         }
         return $this->render('auth', ['model' => $reg_model]);
     }
+    /**
+     * 退出系统功能
+     * @return [type] [description]
+     */
     public function actionLogout(){
         $model = new User;
         if ($model->logout()) {

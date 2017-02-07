@@ -57,7 +57,7 @@ class User extends ActiveRecord
            if (preg_match('/@/',$this->loginname)) {
                $loginname="useremail";
            }
-           //
+           //这个语句很重要 但是太陌生
         $data = self::find()->where($loginname.' = :loginname and userpass = :pass', [':loginname' => $this->loginname, ':pass' => md5($this->userpass)])->one();
            if (is_null($data)) {
                $this->addError("userpass","用户名或者密码错误！");
