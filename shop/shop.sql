@@ -13,3 +13,27 @@ CREATE TABLE IF NOT EXISTS `shop_admin`(
 )ENGINE=INNODB DEFAULT CHARSET=utf8;
 
 INSERT INTO `shop_admin` (adminuser,adminpass,adminemail,createtime) VALUES ('root',md5('123'),'shop@imooc.com',UNIX_TIMESTAMP());
+
+
+
+DROP TABLE IF EXISTS `shop_category`;
+CREATE TABLE IF NOT EXISTS `shop_category`(
+    `cateid` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `title` VARCHAR(32) NOT NULL DEFAULT '',
+    `parentid` BIGINT UNSIGNED NOT NULL DEFAULT '0',
+    `createtime` INT UNSIGNED NOT NULL DEFAULT '0',
+    PRIMARY KEY(`cateid`),
+    KEY shop_category_parentid(`parentid`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+########################无限极分类数据表###############################
+
+DROP TABLE IF EXISTS `shop_category` ;
+CREATE TABLE IF NOT EXISTS `shop_category`(
+    `cateid` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `title` VARCHAR(32) NOT NULL DEFAULT '',
+    `parentid` BIGINT UNSIGNED NOT NULL DEFAULT '0',
+    `createtime` INT UNSIGNED NOT NULL DEFAULT '0',
+    PRIMARY KEY(`cateid`),
+    KEY shop_category_parentid(`parentid`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
