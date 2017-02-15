@@ -24,11 +24,18 @@ class CategoryController extends Controller
     * 2017年2月14日 23:04:17
     * @return [type] [description]
     */
-   public function actionAdd(){
-   $this->layout = 'layout1';
-   $list = ['顶级分类添加'];
-   $models = new Category;
-   return $this->render('add',['model'=>$models,'list'=>$list]);
+   public function actionAdd()
+   {
+       $models = new Category;
+       $this->layout = 'layout1';
+       $list = $models->getOptions();
+       if (Yii::$app->request->isPost) {
+           $post = Yii::$app->request->post();
+           if ($models->add($post)) {
+              Yii::$app->session->setFlash('info','添加成功！');
+           }
+       }
+       return $this->render('add',['model'=>$models,'list'=>$list]);
 
    }
 
