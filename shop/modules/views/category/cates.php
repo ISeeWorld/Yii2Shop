@@ -17,29 +17,43 @@
                 <!-- Users table -->
                 <div class="row-fluid table">
                     <table class="table table-hover">
+                    <tbody> 
                         <thead>
                             <tr>
                                 <th class="span3 sortable">
-                                    <span class="line"></span>用户名
+                                    <span class="line"></span>序号
                                 </th>
                                 <th class="span3 sortable">
-                                    <span class="line"></span>真实姓名
+                                    <span class="line"></span>分类名称
                                 </th>
                                 <th class="span2 sortable">
-                                    <span class="line"></span>昵称
+                                    <span class="line"></span>操作
                                 </th>
-                                <th class="span3 sortable">
+<!--                                 <th class="span3 sortable">
                                     <span class="line"></span>性别
                                 </th>
                                 <th class="span3 sortable">
                                     <span class="line"></span>年龄
-                                </th>
+                                </th> -->
             
                         </thead>
-
-                <div class="pagination pull-right">
-
-                </div>
+                    </tbody>
+                    <?php 
+                      foreach ($cates as $v){
+                     ?>
+                     <tr class="first">
+                         <td>
+                             <?php echo $v['cateid']; ?>
+                         </td>
+                         <td>
+                             <?php echo $v['title']; ?>
+                         </td>
+                          <td >
+                          <a href="<?php echo yii\helpers\Url::to(['category/edit','cateid' =>$v['cateid']]);?>">编辑</a>
+                         <a href="<?php echo yii\helpers\Url::to(['category/del','cateid' =>$v['cateid']]);?>">删除</a>
+                          </td>
+                     </tr>
+                   <?php }; ?>
                 <!-- end users table -->
             </div>
         </div>

@@ -16,7 +16,8 @@ class CategoryController extends Controller
     
     $this->layout = 'layout1';
     $models = new Category;
-    return $this->render('cates',['model'=>$models]);
+    $list = $models->getTreeList();
+    return $this->render('cates',['model'=>$models,'cates'=>$list]);
    }
  
    /**
@@ -38,9 +39,32 @@ class CategoryController extends Controller
        return $this->render('add',['model'=>$models,'list'=>$list]);
 
    }
+   
+   public function actionDel()
+   {
+      $models = new Category;
+   }
 
+    /**
+     * 编辑分类
+     * 2017年2月16日 21:43:31
+     * @return [type] [description]
+     */
+   public function actionEdit()
+   {
+     $this->layout = "layout1";
+     $id = Yii::$app->request->get('cateid');
+     $model = Category::find()->where('cateid = :id',[':id'=>$id])->one();
+     if (Yii::$app->request->isPost) {
+         $post = Yii::$app->request->post();
+         if ($model->load($post) && $model->save()) {
+             Yii::$app->session->setFlash('info','修改成功!');
+         }
+     }
+     $list = $model->getOptions();
+     return $this->render('add',['model'=>$model,'list'=>$list]);
 
-
+   }
 
 
 

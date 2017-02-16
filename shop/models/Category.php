@@ -115,7 +115,18 @@ class Category extends ActiveRecord
         }
         return $options;
     }
-
+    
+    /**
+     * 获取数据列表
+     * 2017年2月16日 21:33:27
+     * @return [type] [description]
+     */
+    public function getTreeList()
+    {
+        $data = $this->getData();
+        $tree = $this->getTree($data);
+        return $tree = $this->setPrefix($tree);
+    }
 
 }
 
