@@ -39,10 +39,31 @@ class CategoryController extends Controller
        return $this->render('add',['model'=>$models,'list'=>$list]);
 
    }
-   
+   /**
+    * 删除分类操作
+    * 2017年2月17日 21:34:47
+    * 重点学习try catch 语句使用
+    * 及数据库操作语言的使用
+    * @return [type] [description]
+    */
    public function actionDel()
    {
-      $models = new Category;
+      try{
+        $id = Yii::$app->request->get('cateid');
+        if (empty($id)) {
+           throw new \Exception("ID参数错误！");
+        }
+        $data = Category::find()->where('parentid = :id',[':id'=>$id])->one();
+        if ($data) {
+          throw new \Exception("该分类下有子类，不允许删除!");
+        }
+        if (!Category::deleteAll('cateid = :id',[':id' => $id])){
+           throw new \Exception('删除失败！');
+        }
+      }catch(\Exception $e){
+        Yii::$app->session->setFlash('info',$e->getMessage());
+      }
+      return $this->redirect(['category/list']);
    }
 
     /**

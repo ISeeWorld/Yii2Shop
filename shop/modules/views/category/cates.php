@@ -16,6 +16,12 @@
 
                 <!-- Users table -->
                 <div class="row-fluid table">
+                <?php 
+            if (\Yii::$app->session->hasFlash('info')) {
+           echo \Yii::$app->session->getFlash('info');
+             }
+
+                 ?>
                     <table class="table table-hover">
                     <tbody> 
                         <thead>
