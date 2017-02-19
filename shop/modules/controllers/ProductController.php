@@ -4,6 +4,7 @@ namespace app\modules\controllers;
 use Yii;
 use yii\web\Controller;
 use app\models\Product;
+use app\models\Category;
 use crazyfd\qiniu\Qiniu;
 class ProductController extends Controller
 {
@@ -34,11 +35,19 @@ class ProductController extends Controller
        unset($opts[0]);
 
 
-       if (Yii::$app->requeset->isPost) {
+       if (Yii::$app->request->isPost) {
            $post = Yii::$app->requeset->post();
            $pics = $this->upload();
            if (!$pics) {
              $model->addError('cover','封面不能为空！');
+           }else{
+            $post['Product']['cover'] = $pics['cover'];
+            $post['Product']['pics'] = $pics['pics'];
+           }
+           if ($pics && $model->add($post)) {
+               Yii::$app->session->setFlash('info','添加成功！');
+           }else{
+               Yii::$app->session->setFlash('info','添加失败！');
            }
        }
        return $this->render('add',['model' =>$model,'opts'=>$opts]);
@@ -53,18 +62,24 @@ class ProductController extends Controller
       if ($_FILES['Product']['error']['cover']<0) {
         return false;
       }
-      $qiniu = new Qiniu(Category::AK,Category::SK,);
+      $qiniu = new Qiniu(Product::AK,Product::SK,Product::BUCKET,Product::BUCKET);
+      $key = uniqid();
+      //封面照片
+      $qiniu->uploadFile($_FILES['Product']['tmp_name']['cover'],$key);
+      $cover = $qiniu->getLink($key);
+      $pics = [];
+      //其他照片
+      foreach ($_FILES['Product']['tmp_name']['pics'] as $k => $file) {
+            if ($_FILES['Product']['error']['pics'][$k] > 0) {
+                continue;
+            }
+            $key = uniqid();
+            $qiniu->uploadFile($file, $key);
+            $pics[$key] = $qiniu->getLink($key);
+        }
+        return ['cover' => $cover, 'pics' => json_encode($pics)];
 
     }
 }
-
-
-
-
-
-
-
-
-
 
  ?>

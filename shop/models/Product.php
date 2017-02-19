@@ -10,7 +10,7 @@ class Product extends ActiveRecord
   const AK = 'f1NQz9_Zmd3zS0a079YJ1-HF3tLj3Ce3I9ekXtMF';
   const SK = 'ciIWIlTJg5kIc2NbqXBgQyvYdJR8fxEITcIUzOFT';
   const DOMAIN = 'olknm0wzh.bkt.clouddn.com';
-  const bucket = 'yii2-imooc-shop';
+  const BUCKET = 'yii2-imooc-shop';
 
   public static function tableName()
   {
@@ -27,6 +27,17 @@ class Product extends ActiveRecord
   public function attributeLabels()
   {
     return [];
+  }
+  /**
+   * 数据方法 添加数据
+   * @param [type] $data [description]
+   */
+  public function add($data)
+  {
+    if ($this->load($data)&&$this->save(false)) {
+        return true;
+    }
+    return false;
   }
 
 
