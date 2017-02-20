@@ -6,6 +6,7 @@ use yii\web\Controller;
 use app\models\Product;
 use app\models\Category;
 use crazyfd\qiniu\Qiniu;
+use yii\data\Pagination;
 class ProductController extends Controller
 {
     /**
@@ -16,10 +17,13 @@ class ProductController extends Controller
     public function actionList()
     {
        $this->layout = 'layout1';
-       $model = new Product;
-       $products = [];
-       $pager = [];
-       return $this->render('products',['model'=>$model,'products'=>$products,'pager'=>$pager]);
+        $model = Product::find();
+        $count = $model->count();
+        //$pageSize = Yii::$app->params['pageSize']['product'];
+        $pageSize =6;
+        $pager = new Pagination(['totalCount' => $count, 'pageSize' => $pageSize]);
+        $products = $model->offset($pager->offset)->limit($pager->limit)->all();
+        return $this->render("products", ['pager' => $pager, 'products' => $products]);
     }
     /**
      * 添加商品
@@ -36,7 +40,7 @@ class ProductController extends Controller
 
 
        if (Yii::$app->request->isPost) {
-           $post = Yii::$app->requeset->post();
+           $post = Yii::$app->request->post();
            $pics = $this->upload();
            if (!$pics) {
              $model->addError('cover','封面不能为空！');
@@ -62,11 +66,13 @@ class ProductController extends Controller
       if ($_FILES['Product']['error']['cover']<0) {
         return false;
       }
-      $qiniu = new Qiniu(Product::AK,Product::SK,Product::BUCKET,Product::BUCKET);
+      //关键语句  注意图片的实际链接网址
+      $qiniu = new Qiniu(Product::AK,Product::SK,Product::DOMAIN,Product::BUCKET);
       $key = uniqid();
-      //封面照片
+      //封面照片 关键方法 具体查看
       $qiniu->uploadFile($_FILES['Product']['tmp_name']['cover'],$key);
       $cover = $qiniu->getLink($key);
+      // var_dump($cover);exit();
       $pics = [];
       //其他照片
       foreach ($_FILES['Product']['tmp_name']['pics'] as $k => $file) {

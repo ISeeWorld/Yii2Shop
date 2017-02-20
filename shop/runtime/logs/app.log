@@ -22014,3 +22014,467 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1487520236.412
     'REQUEST_TIME' => 1487520236
 ]
+2017-02-20 21:36:42 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\web\Application::requeset' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\di\ServiceLocator.php(73): yii\base\Component->__get('requeset')
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\modules\controllers\ProductController.php(39): yii\di\ServiceLocator->__get('requeset')
+#2 [internal function]: app\modules\controllers\ProductController->actionAdd()
+#3 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('add', Array)
+#6 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('admin/product/a...', Array)
+#7 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-02-20 21:36:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/product/add'
+]
+
+$_POST = [
+    '_csrf' => 'M1hUYjJBUVd9CSwaVxkyO3RgODJ0Mx4BXwEZE1ZsZGR.LhI0ARAHAw=='
+    'Product' => [
+        'cateid' => '1'
+        'title' => 'shouji1'
+        'descr' => 'HTC<b> 1234</b><br>'
+        'price' => '1234'
+        'ishot' => '0'
+        'issale' => '0'
+        'saleprice' => '123'
+        'num' => '12'
+        'ison' => '1'
+        'istui' => '1'
+        'cover' => ''
+        'pics' => [
+            0 => ''
+        ]
+    ]
+    '_wysihtml5_mode' => '1'
+]
+
+$_FILES = [
+    'Product' => [
+        'name' => [
+            'cover' => '1 (2).jpg'
+            'pics' => [
+                0 => '2 (2).jpg'
+            ]
+        ]
+        'type' => [
+            'cover' => 'image/jpeg'
+            'pics' => [
+                0 => 'image/jpeg'
+            ]
+        ]
+        'tmp_name' => [
+            'cover' => 'C:\\Users\\ComputerBoy\\AppData\\Local\\Temp\\phpFE7B.tmp'
+            'pics' => [
+                0 => 'C:\\Users\\ComputerBoy\\AppData\\Local\\Temp\\phpFE8B.tmp'
+            ]
+        ]
+        'error' => [
+            'cover' => 0
+            'pics' => [
+                0 => 0
+            ]
+        ]
+        'size' => [
+            'cover' => 56225
+            'pics' => [
+                0 => 28416
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'LAST_CCSYN' => '260'
+    'AMID' => '3166320195'
+    'AMCV_127B38B3527845B30A490D4C@AdobeOrg' => '1999109931|MCIDTS|17212|MCMID|50377004123969514092313735659546131799|MCAID|NONE|MCAAMLH-1487688072|11|MCAAMB-1487688072|hmk_Lq6TPIBMW925SPhw3Q'
+    'utag_main' => 'v_id:015a3d132bdf0097183220198ab815048001400d006c3$_sn:1$_ss:0$_pn:2;exp-session$_st:1487085206675$ses_id:1487083351007;exp-session'
+    '_ga' => 'GA1.2.1362608745.1487083351'
+    's_getNewRepeat' => '1487083407121-New'
+    '_caid' => '1a4aa9ba-9b4a-4195-9365-645b0cd93e6d'
+    'PHPSESSID' => 'v0l33le42798hih400md4pcqb6'
+    '_csrf' => '5641b064f91f2cd6237f8c6304dc8e67440b01e03b32cca4253a68499935833fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NQxxeXclG8lPFrOVlYMqd-53MvFV3QVT\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/index.php?r=admin%2Fproduct%2Fadd'
+    'HTTP_COOKIE' => 'LAST_CCSYN=260; AMID=3166320195; AMCV_127B38B3527845B30A490D4C%40AdobeOrg=1999109931%7CMCIDTS%7C17212%7CMCMID%7C50377004123969514092313735659546131799%7CMCAID%7CNONE%7CMCAAMLH-1487688072%7C11%7CMCAAMB-1487688072%7Chmk_Lq6TPIBMW925SPhw3Q; utag_main=v_id:015a3d132bdf0097183220198ab815048001400d006c3$_sn:1$_ss:0$_pn:2%3Bexp-session$_st:1487085206675$ses_id:1487083351007%3Bexp-session; _ga=GA1.2.1362608745.1487083351; s_getNewRepeat=1487083407121-New; _caid=1a4aa9ba-9b4a-4195-9365-645b0cd93e6d; PHPSESSID=v0l33le42798hih400md4pcqb6; _csrf=5641b064f91f2cd6237f8c6304dc8e67440b01e03b32cca4253a68499935833fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NQxxeXclG8lPFrOVlYMqd-53MvFV3QVT%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------300181288118641'
+    'CONTENT_LENGTH' => '86979'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '51521'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fproduct%2Fadd'
+    'REQUEST_URI' => '/index.php?r=admin%2Fproduct%2Fadd'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487597801.478
+    'REQUEST_TIME' => 1487597801
+]
+2017-02-20 21:40:13 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getPageCount() on a non-object' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\widgets\LinkPager.php:155
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-20 21:40:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/product/list'
+]
+
+$_COOKIE = [
+    'LAST_CCSYN' => '260'
+    'AMID' => '3166320195'
+    'AMCV_127B38B3527845B30A490D4C@AdobeOrg' => '1999109931|MCIDTS|17212|MCMID|50377004123969514092313735659546131799|MCAID|NONE|MCAAMLH-1487688072|11|MCAAMB-1487688072|hmk_Lq6TPIBMW925SPhw3Q'
+    'utag_main' => 'v_id:015a3d132bdf0097183220198ab815048001400d006c3$_sn:1$_ss:0$_pn:2;exp-session$_st:1487085206675$ses_id:1487083351007;exp-session'
+    '_ga' => 'GA1.2.1362608745.1487083351'
+    's_getNewRepeat' => '1487083407121-New'
+    '_caid' => '1a4aa9ba-9b4a-4195-9365-645b0cd93e6d'
+    'PHPSESSID' => 'v0l33le42798hih400md4pcqb6'
+    '_csrf' => '5641b064f91f2cd6237f8c6304dc8e67440b01e03b32cca4253a68499935833fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NQxxeXclG8lPFrOVlYMqd-53MvFV3QVT\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/index.php?r=admin%2Fproduct%2Fadd'
+    'HTTP_COOKIE' => 'LAST_CCSYN=260; AMID=3166320195; AMCV_127B38B3527845B30A490D4C%40AdobeOrg=1999109931%7CMCIDTS%7C17212%7CMCMID%7C50377004123969514092313735659546131799%7CMCAID%7CNONE%7CMCAAMLH-1487688072%7C11%7CMCAAMB-1487688072%7Chmk_Lq6TPIBMW925SPhw3Q; utag_main=v_id:015a3d132bdf0097183220198ab815048001400d006c3$_sn:1$_ss:0$_pn:2%3Bexp-session$_st:1487085206675$ses_id:1487083351007%3Bexp-session; _ga=GA1.2.1362608745.1487083351; s_getNewRepeat=1487083407121-New; _caid=1a4aa9ba-9b4a-4195-9365-645b0cd93e6d; PHPSESSID=v0l33le42798hih400md4pcqb6; _csrf=5641b064f91f2cd6237f8c6304dc8e67440b01e03b32cca4253a68499935833fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NQxxeXclG8lPFrOVlYMqd-53MvFV3QVT%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '51648'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fproduct%2Flist'
+    'REQUEST_URI' => '/index.php?r=admin%2Fproduct%2Flist'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487598013.463
+    'REQUEST_TIME' => 1487598013
+]
+2017-02-20 21:43:43 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: pageSize' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\modules\controllers\ProductController.php:21
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\modules\controllers\ProductController.php(21): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\\ProgramFiles...', 21, Array)
+#1 [internal function]: app\modules\controllers\ProductController->actionList()
+#2 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('list', Array)
+#5 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('admin/product/l...', Array)
+#6 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-02-20 21:43:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/product/list'
+]
+
+$_COOKIE = [
+    'LAST_CCSYN' => '260'
+    'AMID' => '3166320195'
+    'AMCV_127B38B3527845B30A490D4C@AdobeOrg' => '1999109931|MCIDTS|17212|MCMID|50377004123969514092313735659546131799|MCAID|NONE|MCAAMLH-1487688072|11|MCAAMB-1487688072|hmk_Lq6TPIBMW925SPhw3Q'
+    'utag_main' => 'v_id:015a3d132bdf0097183220198ab815048001400d006c3$_sn:1$_ss:0$_pn:2;exp-session$_st:1487085206675$ses_id:1487083351007;exp-session'
+    '_ga' => 'GA1.2.1362608745.1487083351'
+    's_getNewRepeat' => '1487083407121-New'
+    '_caid' => '1a4aa9ba-9b4a-4195-9365-645b0cd93e6d'
+    'PHPSESSID' => 'v0l33le42798hih400md4pcqb6'
+    '_csrf' => '5641b064f91f2cd6237f8c6304dc8e67440b01e03b32cca4253a68499935833fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NQxxeXclG8lPFrOVlYMqd-53MvFV3QVT\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/index.php?r=admin%2Fproduct%2Fadd'
+    'HTTP_COOKIE' => 'LAST_CCSYN=260; AMID=3166320195; AMCV_127B38B3527845B30A490D4C%40AdobeOrg=1999109931%7CMCIDTS%7C17212%7CMCMID%7C50377004123969514092313735659546131799%7CMCAID%7CNONE%7CMCAAMLH-1487688072%7C11%7CMCAAMB-1487688072%7Chmk_Lq6TPIBMW925SPhw3Q; utag_main=v_id:015a3d132bdf0097183220198ab815048001400d006c3$_sn:1$_ss:0$_pn:2%3Bexp-session$_st:1487085206675$ses_id:1487083351007%3Bexp-session; _ga=GA1.2.1362608745.1487083351; s_getNewRepeat=1487083407121-New; _caid=1a4aa9ba-9b4a-4195-9365-645b0cd93e6d; PHPSESSID=v0l33le42798hih400md4pcqb6; _csrf=5641b064f91f2cd6237f8c6304dc8e67440b01e03b32cca4253a68499935833fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NQxxeXclG8lPFrOVlYMqd-53MvFV3QVT%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '51711'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fproduct%2Flist'
+    'REQUEST_URI' => '/index.php?r=admin%2Fproduct%2Flist'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487598221.904
+    'REQUEST_TIME' => 1487598221
+]
+2017-02-20 21:44:19 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\modules\controllers\Pagination' not found' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\modules\controllers\ProductController.php:23
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-20 21:44:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/product/list'
+]
+
+$_COOKIE = [
+    'LAST_CCSYN' => '260'
+    'AMID' => '3166320195'
+    'AMCV_127B38B3527845B30A490D4C@AdobeOrg' => '1999109931|MCIDTS|17212|MCMID|50377004123969514092313735659546131799|MCAID|NONE|MCAAMLH-1487688072|11|MCAAMB-1487688072|hmk_Lq6TPIBMW925SPhw3Q'
+    'utag_main' => 'v_id:015a3d132bdf0097183220198ab815048001400d006c3$_sn:1$_ss:0$_pn:2;exp-session$_st:1487085206675$ses_id:1487083351007;exp-session'
+    '_ga' => 'GA1.2.1362608745.1487083351'
+    's_getNewRepeat' => '1487083407121-New'
+    '_caid' => '1a4aa9ba-9b4a-4195-9365-645b0cd93e6d'
+    'PHPSESSID' => 'v0l33le42798hih400md4pcqb6'
+    '_csrf' => '5641b064f91f2cd6237f8c6304dc8e67440b01e03b32cca4253a68499935833fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NQxxeXclG8lPFrOVlYMqd-53MvFV3QVT\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/index.php?r=admin%2Fproduct%2Fadd'
+    'HTTP_COOKIE' => 'LAST_CCSYN=260; AMID=3166320195; AMCV_127B38B3527845B30A490D4C%40AdobeOrg=1999109931%7CMCIDTS%7C17212%7CMCMID%7C50377004123969514092313735659546131799%7CMCAID%7CNONE%7CMCAAMLH-1487688072%7C11%7CMCAAMB-1487688072%7Chmk_Lq6TPIBMW925SPhw3Q; utag_main=v_id:015a3d132bdf0097183220198ab815048001400d006c3$_sn:1$_ss:0$_pn:2%3Bexp-session$_st:1487085206675$ses_id:1487083351007%3Bexp-session; _ga=GA1.2.1362608745.1487083351; s_getNewRepeat=1487083407121-New; _caid=1a4aa9ba-9b4a-4195-9365-645b0cd93e6d; PHPSESSID=v0l33le42798hih400md4pcqb6; _csrf=5641b064f91f2cd6237f8c6304dc8e67440b01e03b32cca4253a68499935833fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NQxxeXclG8lPFrOVlYMqd-53MvFV3QVT%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '51723'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fproduct%2Flist'
+    'REQUEST_URI' => '/index.php?r=admin%2Fproduct%2Flist'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487598258.092
+    'REQUEST_TIME' => 1487598258
+]
+2017-02-20 21:44:59 [127.0.0.1][-][v0l33le42798hih400md4pcqb6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: admin/product/del' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('del', Array)
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('admin/product/d...', Array)
+#2 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-02-20 21:44:59 [127.0.0.1][-][v0l33le42798hih400md4pcqb6][info][application] $_GET = [
+    'r' => 'admin/product/del'
+    'productid' => '1'
+]
+
+$_COOKIE = [
+    'LAST_CCSYN' => '260'
+    'AMID' => '3166320195'
+    'AMCV_127B38B3527845B30A490D4C@AdobeOrg' => '1999109931|MCIDTS|17212|MCMID|50377004123969514092313735659546131799|MCAID|NONE|MCAAMLH-1487688072|11|MCAAMB-1487688072|hmk_Lq6TPIBMW925SPhw3Q'
+    'utag_main' => 'v_id:015a3d132bdf0097183220198ab815048001400d006c3$_sn:1$_ss:0$_pn:2;exp-session$_st:1487085206675$ses_id:1487083351007;exp-session'
+    '_ga' => 'GA1.2.1362608745.1487083351'
+    's_getNewRepeat' => '1487083407121-New'
+    '_caid' => '1a4aa9ba-9b4a-4195-9365-645b0cd93e6d'
+    'PHPSESSID' => 'v0l33le42798hih400md4pcqb6'
+    '_csrf' => '5641b064f91f2cd6237f8c6304dc8e67440b01e03b32cca4253a68499935833fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NQxxeXclG8lPFrOVlYMqd-53MvFV3QVT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'boy'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/index.php?r=admin%2Fproduct%2Flist'
+    'HTTP_COOKIE' => 'LAST_CCSYN=260; AMID=3166320195; AMCV_127B38B3527845B30A490D4C%40AdobeOrg=1999109931%7CMCIDTS%7C17212%7CMCMID%7C50377004123969514092313735659546131799%7CMCAID%7CNONE%7CMCAAMLH-1487688072%7C11%7CMCAAMB-1487688072%7Chmk_Lq6TPIBMW925SPhw3Q; utag_main=v_id:015a3d132bdf0097183220198ab815048001400d006c3$_sn:1$_ss:0$_pn:2%3Bexp-session$_st:1487085206675$ses_id:1487083351007%3Bexp-session; _ga=GA1.2.1362608745.1487083351; s_getNewRepeat=1487083407121-New; _caid=1a4aa9ba-9b4a-4195-9365-645b0cd93e6d; PHPSESSID=v0l33le42798hih400md4pcqb6; _csrf=5641b064f91f2cd6237f8c6304dc8e67440b01e03b32cca4253a68499935833fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NQxxeXclG8lPFrOVlYMqd-53MvFV3QVT%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '51746'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fproduct%2Fdel&productid=1'
+    'REQUEST_URI' => '/index.php?r=admin%2Fproduct%2Fdel&productid=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487598298.996
+    'REQUEST_TIME' => 1487598298
+]
+2017-02-20 22:33:01 [127.0.0.1][-][v0l33le42798hih400md4pcqb6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: admin/product/mod' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('mod', Array)
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('admin/product/m...', Array)
+#2 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\ProgramFiles\phpstudy2016\WWW\YII2_SHOP\shop\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-02-20 22:33:01 [127.0.0.1][-][v0l33le42798hih400md4pcqb6][info][application] $_GET = [
+    'r' => 'admin/product/mod'
+    'productid' => '2'
+]
+
+$_COOKIE = [
+    'LAST_CCSYN' => '260'
+    'AMID' => '3166320195'
+    'AMCV_127B38B3527845B30A490D4C@AdobeOrg' => '1999109931|MCIDTS|17212|MCMID|50377004123969514092313735659546131799|MCAID|NONE|MCAAMLH-1487688072|11|MCAAMB-1487688072|hmk_Lq6TPIBMW925SPhw3Q'
+    'utag_main' => 'v_id:015a3d132bdf0097183220198ab815048001400d006c3$_sn:1$_ss:0$_pn:2;exp-session$_st:1487085206675$ses_id:1487083351007;exp-session'
+    '_ga' => 'GA1.2.1362608745.1487083351'
+    's_getNewRepeat' => '1487083407121-New'
+    '_caid' => '1a4aa9ba-9b4a-4195-9365-645b0cd93e6d'
+    'PHPSESSID' => 'v0l33le42798hih400md4pcqb6'
+    '_csrf' => '5641b064f91f2cd6237f8c6304dc8e67440b01e03b32cca4253a68499935833fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NQxxeXclG8lPFrOVlYMqd-53MvFV3QVT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'boy'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://shop.com/index.php?r=admin%2Fproduct%2Flist'
+    'HTTP_COOKIE' => 'LAST_CCSYN=260; AMID=3166320195; AMCV_127B38B3527845B30A490D4C%40AdobeOrg=1999109931%7CMCIDTS%7C17212%7CMCMID%7C50377004123969514092313735659546131799%7CMCAID%7CNONE%7CMCAAMLH-1487688072%7C11%7CMCAAMB-1487688072%7Chmk_Lq6TPIBMW925SPhw3Q; utag_main=v_id:015a3d132bdf0097183220198ab815048001400d006c3$_sn:1$_ss:0$_pn:2%3Bexp-session$_st:1487085206675$ses_id:1487083351007%3Bexp-session; _ga=GA1.2.1362608745.1487083351; s_getNewRepeat=1487083407121-New; _caid=1a4aa9ba-9b4a-4195-9365-645b0cd93e6d; PHPSESSID=v0l33le42798hih400md4pcqb6; _csrf=5641b064f91f2cd6237f8c6304dc8e67440b01e03b32cca4253a68499935833fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NQxxeXclG8lPFrOVlYMqd-53MvFV3QVT%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\SCut;C:\\Python27;C:\\Python27\\Scripts;D:\\ProgramFiles\\phpstudy2016\\MySQL\\bin;D:\\ProgramFiles\\phpstudy2016\\php55n;C:\\ProgramData\\ComposerSetup\\bin;D:\\ProgramFiles\\Git\\cmd;C:\\Users\\ComputerBoy\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/ProgramFiles/phpstudy2016/WWW/YII2_SHOP/shop/web/index.php'
+    'REMOTE_PORT' => '49421'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fproduct%2Fmod&productid=2'
+    'REQUEST_URI' => '/index.php?r=admin%2Fproduct%2Fmod&productid=2'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487601181.137
+    'REQUEST_TIME' => 1487601181
+]
