@@ -86,6 +86,58 @@ class ProductController extends Controller
         return ['cover' => $cover, 'pics' => json_encode($pics)];
 
     }
+    /**
+     * 修改用户数据
+     * 2017年2月21日 22:20:31
+     * 过于复杂需要仔细理解学习
+     * @return [type] [description]
+     */
+    public function actionMod()
+    {
+        $this->layout = 'layout1';
+        // $model = new Product;
+        $cates = new Category;
+        $opts = $cates->getOptions();
+        $id = Yii::$app->request->get('productid');
+        if (!empty($id)) {
+        $model = Product::find()->where('productid = :id',[':id'=>$id])->one();
+        }
+        //
+        if (Yii::$app->request->isPost) {
+            $post = Yii::$app->request->post();
+            $qiniu = new Qiniu(Product::AK, Product::SK, Product::DOMAIN, Product::BUCKET);
+            $post['Product']['cover'] = $model->cover;
+            if ($_FILES['Product']['error']['cover'] == 0) {
+                $key = uniqid();
+                $qiniu->uploadFile($_FILES['Product']['tmp_name']['cover'], $key);
+                $post['Product']['cover'] = $qiniu->getLink($key);
+                $qiniu->delete(basename($model->cover));
+
+            }
+            $pics = [];
+            foreach($_FILES['Product']['tmp_name']['pics'] as $k => $file) {
+                if ($_FILES['Product']['error']['pics'][$k] > 0) {
+                    continue;
+
+                }
+                $key = uniqid();
+                $qiniu->uploadfile($file, $key);
+                $pics[$key] = $qiniu->getlink($key);
+
+            }  
+            $post['Product']['pics'] = json_encode(array_merge((array)json_decode($model->pics, true), $pics));
+            if ($model->load($post) && $model->save()) {
+                Yii::$app->session->setFlash('info', '修改成功');
+            }
+          
+       }
+       return $this->render('add',['model' =>$model,'opts'=>$opts]);
+    }
+
+    public function actionRemovepic()
+    {
+
+    }
 }
 
  ?>
