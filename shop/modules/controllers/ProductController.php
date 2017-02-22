@@ -126,6 +126,7 @@ class ProductController extends Controller
 
             }  
             $post['Product']['pics'] = json_encode(array_merge((array)json_decode($model->pics, true), $pics));
+            //不太理解
             if ($model->load($post) && $model->save()) {
                 Yii::$app->session->setFlash('info', '修改成功');
             }
@@ -133,11 +134,74 @@ class ProductController extends Controller
        }
        return $this->render('add',['model' =>$model,'opts'=>$opts]);
     }
-
+    /**
+     * 删除图片
+     * 2017年2月22日 20:52:00
+     * @return [type] [description]
+     */
     public function actionRemovepic()
     {
+      $pid = Yii::$app->request->get('productid');
+      $key = Yii::$app->request->get('key');
+      //先删除数据库中的数据
+      $model = Product::find()->where('productid = :pid',[':pid'=>$pid])->one();
+      $pics = json_decode($model->pics,true);
+      unset($pics[$key]);
+      //删除7牛中的数
+      $qiniu = new Qiniu(Product::AK,Product::SK,Product::DOMAIN,Product::BUCKET);
+      $qiniu->delete($key);
+      // 更新数据
+      Product::updateAll(['pics'=>json_encode($pics)],'productid = :pid',[':pid'=>$pid]);
+      //函数语句不熟悉
+      return $this->redirect(['product/mod','productid'=>$pid]);
+    }
+    /**
+     * 删除的方法
+     */
+    public function actionDel()
+    {
+     $pid = Yii::$app->request->get('productid');
+     $model = Product::find()->where('productid= :pid',[':pid'=>$pid])->one();
+     //获取随机键值
+     $key = basename($model->cover);
+     // var_dump($key);
+     // var_dump($model->pics);
+     // exit();
+     $qiniu = new Qiniu(Product::AK,Product::SK,Product::DOMAIN,Product::BUCKET);
+     $qiniu->delete($key);
+     $pics = json_decode($model->pics,true);
+     foreach ($pics as $key => $value) {
+         $qiniu->delete($key);
+     }
+     Product::deleteAll('productid = :pid',[':pid'=>$pid]);
+     return $this->redirect(['product/list']);
+    }
+    /**
+     * 商品上级操作
+     * 2017年2月22日 21:22:25
+     * @return boolean [description]
+     */
+    public function actionOn()
+    {
+     $pid = Yii::$app->request->get('productid');
+     Product::updateAll(['isOn'=>'1'],'productid = :pid',[':pid'=>$pid]);
+     return $this->redirect(['product/list']);
+    }
+    /**
+     * 商品下架
+     * 2017年2月22日 21:23:07
+     * @return boolean [description]
+     */
+    public function actionOff()
+    {
+        $pid = Yii::$app->request->get('productid');
+        Product::updateAll(['isOn'=>'0'],'productid = :pid',[':pid'=>$pid]);
+        return $this->redirect(['product/list']);
 
     }
+
+
+
 }
 
  ?>
