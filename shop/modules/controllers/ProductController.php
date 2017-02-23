@@ -164,9 +164,6 @@ class ProductController extends Controller
      $model = Product::find()->where('productid= :pid',[':pid'=>$pid])->one();
      //获取随机键值
      $key = basename($model->cover);
-     // var_dump($key);
-     // var_dump($model->pics);
-     // exit();
      $qiniu = new Qiniu(Product::AK,Product::SK,Product::DOMAIN,Product::BUCKET);
      $qiniu->delete($key);
      $pics = json_decode($model->pics,true);

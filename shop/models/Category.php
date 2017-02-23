@@ -127,6 +127,23 @@ class Category extends ActiveRecord
         $tree = $this->getTree($data);
         return $tree = $this->setPrefix($tree);
     }
+    /**
+     * 获取菜单及子菜单 用于视图显示
+     * 2017年2月23日 23:27:51
+     * @return [type] [description]
+     */
+    public static function getMenu()
+    {
+        // 便利获取顶级分类
+        $top = self::find()->where('parentid = :pid', [":pid" => 0])->limit(11)->orderby('createtime asc')->asArray()->all();
+        $data = [];
+        // 获取子集分类
+        foreach((array)$top as $k=>$cate) {
+            $cate['children'] = self::find()->where("parentid = :pid", [":pid" => $cate['cateid']])->limit(10)->asArray()->all();
+            $data[$k] = $cate;
+        }
+        return $data;
+    }
 
 }
 
