@@ -35,7 +35,7 @@ class CommonController extends Controller
          if (!empty($usermodel) && !empty($usermodel->userid)) {
             $userid = $usermodel->userid;
             //获取购物车中的物品
-            $carts = Cart::find()->where(''userid = :uid', [':uid' => $userid')->asArray()->all();
+            $carts = Cart::find()->where('userid = :uid', [':uid' => $userid])->asArray()->all();
             foreach($carts as $k=>$pro) {
                     $product = Product::find()->where('productid = :pid', [':pid' => $pro['productid']])->one();
                     $data['products'][$k]['cover'] = $product->cover;

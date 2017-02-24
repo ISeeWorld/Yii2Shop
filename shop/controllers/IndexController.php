@@ -3,7 +3,8 @@ namespace app\controllers;
 
 use yii\web\Controller;
 use app\models\Product;
-class IndexController extends Controller
+use app\controllers\CommonController;
+class IndexController extends CommonController
 {
 
     public function actionIndex()
