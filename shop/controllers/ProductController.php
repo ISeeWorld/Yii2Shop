@@ -40,7 +40,7 @@ class ProductController extends CommonController
      */
     public function actionDetail()
     {
-         $this->layout = "layout2";
+        $this->layout = "layout2";
         $productid = Yii::$app->request->get("productid");
         $where = 'productid = :id';
         $params= [':id' => $productid];

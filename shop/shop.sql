@@ -71,3 +71,17 @@ CREATE TABLE IF NOT EXISTS `shop_product`(
   KEY shop_product_cateid(`cateid`),
   KEY shop_product_ison(`ison`) 
 )ENGINE=InnoDB DEFAULT CHARSET='utf8'
+
+========================2017年2月25日 21:12:34======================
+
+DROP TABLE IF EXISTS `shop_cart`;
+CREATE TABLE IF NOT EXISTS `shop_cart`(
+    `cartid` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `productid` BIGINT UNSIGNED NOT NULL DEFAULT '0',
+    `productnum` INT UNSIGNED NOT NULL DEFAULT '0',
+    `price` DECIMAL(10,2) NOT NULL DEFAULT '0',
+    `userid` BIGINT UNSIGNED NOT NULL DEFAULT '0',
+    `createtime` INT UNSIGNED NOT  NULL DEFAULT '0',
+    KEY shop_cart_productid(`productid`),
+    KEY shop_cart_userid(`userid`)
+)ENGINE=INNODB DEFAULT CHARSET='utf8';
