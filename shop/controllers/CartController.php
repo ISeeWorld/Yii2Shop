@@ -3,6 +3,8 @@ namespace app\controllers;
 
 use yii\web\Controller;
 use app\models\Product;
+use app\models\User;
+use app\models\Cart;
 use app\controllers\CommonController;
 use Yii;
 class CartController extends CommonController
@@ -27,6 +29,8 @@ class CartController extends CommonController
        // 获取用户名称
        $name = Yii::$app->session['loginname'];
        $userid = User::find()->where('username = :name',[':name'=>$name])->one()->userid;
+       // var_dump($userid);
+       // exit();
         //分情况处理 post方法
         if (Yii::$app->request->isPost) {
             $post = Yii::$app->request->post();
@@ -38,13 +42,22 @@ class CartController extends CommonController
        if (Yii::$app->request->isGet) {
            $productid = Yii::$app->request->get('productid');
            $model = Product::find()->where('productid = :pid',[':pid'=>$productid])->one();
-           $price = $model->issale : $model->saleprice :$model->price;
+           $price = $model->issale ? $model->saleprice :$model->price;
            $num = 1;
            $data['Cart'] = ['productid' => $productid, 'productnum' => $num, 'price' => $price, 'userid' => $userid];     
        }
 
+       $model = Cart::find()->where('productid = :pid and userid = :uid',[':pid'=>$data['Cart']['productid'],':uid'=>$data['Cart']['userid']])->one();
 
-
+       if (!$model) {
+         $model = new Cart;
+       }else{
+         $data['Cart']['productnum'] = $model->productnum + $num;
+       }
+       $data['Cart']['createtime'] = time();
+       $model->load($data);
+       $model->save();
+       return $this->redirect(['cart/index']);
     }
 
 

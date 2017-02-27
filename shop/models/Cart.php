@@ -12,7 +12,10 @@ class Cart extends ActiveRecord
   }
   public function rules()
   {
-    return [];
+    return [
+    [['productid','productnum','userid','price'],'required'],
+    ['createtime','safe']
+    ];
   }
   public function attributeLabels()
   {
