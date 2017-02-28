@@ -9,11 +9,35 @@ use app\controllers\CommonController;
 use Yii;
 class CartController extends CommonController
 {
-
+    /**
+     * 跳转到首页
+     * 2017年2月28日 22:57:04
+     * @return [type] [description]
+     */
     public function actionIndex()
     {
-        $this->layout = "layout1";
-        return $this->render('index');
+      $this->layout = 'layout1';
+     if (Yii::$app->session['isLogin'] !=1 ) {
+        $this->redirect(['member/auth']);
+     }
+     $name = Yii::$app->session['loginname'];
+     $userid = User::find()->where('username = :name',[':name'=>$name])->one()->userid;
+     $cart = Cart::find()->where('userid = :id',[':id'=>$userid])->asArray()->all();
+     // var_dump($cart);
+     // exit();
+     $data= [];
+     foreach ($cart as $k => $pro) {
+          $product = Product::find()->where('productid = :pid',[':pid'=>$pro['productid']])->one();
+            $data[$k]['cover'] = $product->cover;
+            $data[$k]['title'] = $product->title;
+            $data[$k]['productnum'] = $pro['productnum'];
+            $data[$k]['price'] = $pro['price'];
+            $data[$k]['productid'] = $pro['productid'];
+            $data[$k]['cartid'] = $pro['cartid'];
+
+     }
+     return $this->render('index',['data'=>$data]);
+
     }
     /**
      * 购物车添加操作
