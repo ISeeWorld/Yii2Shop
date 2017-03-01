@@ -34,6 +34,8 @@ class CartController extends CommonController
             $data[$k]['price'] = $pro['price'];
             $data[$k]['productid'] = $pro['productid'];
             $data[$k]['cartid'] = $pro['cartid'];
+            // echo $k;
+            // var_dump($pro);
 
      }
      return $this->render('index',['data'=>$data]);
@@ -83,6 +85,29 @@ class CartController extends CommonController
        $model->save();
        return $this->redirect(['cart/index']);
     }
-
+    /**
+     * 修改数量
+     * 2017年3月1日 17:51:41
+     * @return [type] [description]
+     */
+     public function actionMod()
+    {
+      $cartid = Yii::$app->request->get('cartid');
+      $productnum = Yii::$app->request->get('productnum');
+      // echo $cartid;exit();
+      Cart::updateAll(['productnum'=>$productnum],'cartid = :cid',
+        [':cid' => $cartid]);
+    }
+    /**
+     * 删除购物车
+     * 2017年3月1日 18:43:20
+     * @return [type] [description]
+     */
+    public function actionDel()
+    {
+      $cartid = Yii::$app->request->get('cartid');
+      Cart::deleteAll('cartid = :cid',[':cid'=>$cartid]);
+      return $this->redirect(['cart/index']);
+    }
 
 }

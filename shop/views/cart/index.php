@@ -3,19 +3,22 @@
     <div class="container">
         <!-- ========================================= CONTENT ========================================= -->
         <div class="col-xs-12 col-md-9 items-holder no-margin">
-
+            <?php foreach ($data as $k => $v) : ?>
             <div class="row no-margin cart-item">
+            
                 <div class="col-xs-12 col-sm-2 no-margin">
                     <a href="#" class="thumb-holder">
-                        <img class="lazy" alt="" src="assets/images/products/product-small-01.jpg" />
+                        <img class="lazy" alt="" src="http://<?php echo $data[$k]['cover']?>-smallcover" />
                     </a>
                 </div>
 
                 <div class="col-xs-12 col-sm-5 ">
                     <div class="title">
-                        <a href="#">white lumia 9001</a>
+                        <a href="#">
+                            <?php echo $data[$k]['title'] ;?>
+                        </a>
                     </div>
-                    <div class="brand">sony</div>
+                    <div class="brand"><?php echo $data[$k]['productid'] ;?></div>
                 </div>
 
                 <div class="col-xs-12 col-sm-3 no-margin">
@@ -23,7 +26,8 @@
                         <div class="le-quantity">
                             <form>
                                 <a class="minus" href="#reduce"></a>
-                                <input name="quantity" readonly="readonly" type="text" value="1" />
+                                <input name="productnum" readonly="readonly" type="text" id="<?php echo $data[$k]['cartid'] ?>" value="<?php 
+                                echo $data[$k]['productnum'] ?>" />
                                 <a class="plus" href="#add"></a>
                             </form>
                         </div>
@@ -32,11 +36,14 @@
 
                 <div class="col-xs-12 col-sm-2 no-margin">
                     <div class="price">
-                        $2000.00
+                       <?php echo $data[$k]['price'] ?>
                     </div>
-                    <a class="close-btn" href="#"></a>
+                    <a class="close-btn" href="<?php echo yii\helpers\Url::to(['cart/del','cartid'=>$data[$k]['cartid']]); ?>"></a>
                 </div>
-            </div><!-- /.cart-item -->         
+            
+            </div> 
+            <?php endforeach; ?>      
+            <!-- /.cart-item -->  
         </div>
         <!-- ========================================= CONTENT : END ========================================= -->
 
