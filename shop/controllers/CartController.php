@@ -16,7 +16,7 @@ class CartController extends CommonController
      */
     public function actionIndex()
     {
-      $this->layout = 'layout1';
+     $this->layout = 'layout1';
      if (Yii::$app->session['isLogin'] !=1 ) {
         $this->redirect(['member/auth']);
      }
@@ -80,6 +80,7 @@ class CartController extends CommonController
        }else{
          $data['Cart']['productnum'] = $model->productnum + $num;
        }
+       // $data['Cart']['cartid']     =uniqid();
        $data['Cart']['createtime'] = time();
        $model->load($data);
        $model->save();
@@ -97,6 +98,9 @@ class CartController extends CommonController
       // echo $cartid;exit();
       Cart::updateAll(['productnum'=>$productnum],'cartid = :cid',
         [':cid' => $cartid]);
+      //jquery代码有问题 无法区分不同的购物车 只会给第一个购物车添加
+        //2017年3月2日 21:55:30、
+        //需要改进
     }
     /**
      * 删除购物车

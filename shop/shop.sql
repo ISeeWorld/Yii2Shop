@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `shop_product`(
   KEY shop_product_ison(`ison`) 
 )ENGINE=InnoDB DEFAULT CHARSET='utf8'
 
-========================2017年2月25日 21:12:34======================
+===================购物车=====2017年2月25日 21:12:34======================
 
 DROP TABLE IF EXISTS `shop_cart`;
 CREATE TABLE IF NOT EXISTS `shop_cart`(
@@ -85,3 +85,22 @@ CREATE TABLE IF NOT EXISTS `shop_cart`(
     KEY shop_cart_productid(`productid`),
     KEY shop_cart_userid(`userid`)
 )ENGINE=INNODB DEFAULT CHARSET='utf8';
+
+==================订单的数据表 2017年3月2日 22:04:06====================
+DROP TABLE IF NOT EXISTS `shop_order`;
+CREATE TABLE IF NOT EXISTS `shop_order`(
+   `orderid` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+   `userid`  BIGINT UNSIGNED NOT NULL DEFAULT '0',
+   `addressid` BIGINT UNSIGNED NOT NULL DEFAULT '0',
+   `amount` DECIMAL(10,2) NOT NULL DEFAULT '0.00',
+   `status` INT UNSIGNED NOT NULL DEFAULT '0',
+   `expressid` INT UNSIGNED NOT NULL DEFAULT '0',
+   `expressno` VARCHAR(50) NOT NULL DEFAULT '',
+   `tradeno` VARCHAR(100) NOT NULL DEFAULT '',
+   `tradeext` TEXT,
+   `createtime` INT UNSIGNED NOT NULL DEFAULT '0',
+   `updatetime` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+   KEY shop_order_userid(`userid`),
+   KEY shop_order_addressid(`addressid`),
+   KEY shop_order_expressid(`expressid`)   
+)ENGINE=INNODB DEFAULT CHARSET='UTF8';

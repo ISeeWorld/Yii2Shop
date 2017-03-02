@@ -553,6 +553,9 @@
         $("#createlink").click(function(){
             $(".billing-address").slideDown();
         });
+        //jquery代码有问题 无法区分不同的购物车 只会给第一个购物车添加
+        //2017年3月2日 21:55:30、
+        //需要改进
         $(".minus").click(function(){
             var cartid = $("input[name=productnum]").attr('id');
             var num = parseInt($("input[name=productnum]").val()) - 1;
