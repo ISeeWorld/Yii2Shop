@@ -87,7 +87,7 @@ CREATE TABLE IF NOT EXISTS `shop_cart`(
 )ENGINE=INNODB DEFAULT CHARSET='utf8';
 
 ==================订单的数据表 2017年3月2日 22:04:06====================
-DROP TABLE IF NOT EXISTS `shop_order`;
+DROP TABLE IF EXISTS `shop_order`;
 CREATE TABLE IF NOT EXISTS `shop_order`(
    `orderid` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
    `userid`  BIGINT UNSIGNED NOT NULL DEFAULT '0',
@@ -104,3 +104,34 @@ CREATE TABLE IF NOT EXISTS `shop_order`(
    KEY shop_order_addressid(`addressid`),
    KEY shop_order_expressid(`expressid`)   
 )ENGINE=INNODB DEFAULT CHARSET='UTF8';
+
+
+=========================2017年3月3日 商品订单详情 =================================
+DROP TABLE IF EXISTS `shop_order_detail`;
+CREATE TABLE IF NOT EXISTS `shop_order_detail`(
+    `detailid` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `productid` BIGINT UNSIGNED NOT NULL DEFAULT '0',
+    `price` DECIMAL(10,2) NOT NULL DEFAULT '0.00',
+    `productnum` INT UNSIGNED NOT NULL DEFAULT '0',
+    `orderid` BIGINT UNSIGNED NOT NULL DEFAULT '0.0',
+    `createtime` INT UNSIGNED NOT NULL DEFAULT '0',
+    KEY shop_order_detail_productid(`productid`),
+    KEY shop_order_detail_orderid(`orderid`)
+)ENGINE=INNODB DEFAULT CHARSET='utf8';
+
+========================2017年3月3日 23:21:20   =================================
+
+DROP TABLE IF EXISTS `shop_address`;
+CREATE TABLE IF NOT EXISTS `shop_address`(
+  `addressid` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `firstname` VARCHAR(32) NOT NULL DEFAULT '',
+  `lastname` VARCHAR(32) NOT NULL DEFAULT '',
+  `company` VARCHAR(100) NOT NULL DEFAULT '',
+  `address` TEXT,
+  `postcode` CHAR(6) NOT NULL DEFAULT '',
+  `email` VARCHAR(100) NOT NULL DEFAULT '',
+  `telephone` VARCHAR(20) NOT NULL DEFAULT '',
+  `userid` BIGINT UNSIGNED NOT NULL DEFAULT '0',
+  `createtime` INT UNSIGNED NOT NULL DEFAULT '0',
+  KEY shop_address_userid(`userid`)
+)ENGINE=InnoDB DEFAULT CHARSET='UTF8'
