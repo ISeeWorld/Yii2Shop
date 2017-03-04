@@ -17,27 +17,30 @@ class CartController extends CommonController
     public function actionIndex()
     {
      $this->layout = 'layout1';
+     //判断用户是否登录
      if (Yii::$app->session['isLogin'] !=1 ) {
         $this->redirect(['member/auth']);
      }
+     // 获取登录用户名称
      $name = Yii::$app->session['loginname'];
      $userid = User::find()->where('username = :name',[':name'=>$name])->one()->userid;
+     // 根据用户名称获取购物车
      $cart = Cart::find()->where('userid = :id',[':id'=>$userid])->asArray()->all();
-     // var_dump($cart);
-     // exit();
+     //asArray()函数获取的数据是一个多维数组 注意判断处理 
      $data= [];
+     // $k显示为 0 1
      foreach ($cart as $k => $pro) {
+      // 查询到对应商品
           $product = Product::find()->where('productid = :pid',[':pid'=>$pro['productid']])->one();
             $data[$k]['cover'] = $product->cover;
             $data[$k]['title'] = $product->title;
+            // 购物车获取相关信息 2017年3月4日 11:04:18
             $data[$k]['productnum'] = $pro['productnum'];
             $data[$k]['price'] = $pro['price'];
             $data[$k]['productid'] = $pro['productid'];
             $data[$k]['cartid'] = $pro['cartid'];
-            // echo $k;
-            // var_dump($pro);
-
      }
+     // exit();
      return $this->render('index',['data'=>$data]);
 
     }
@@ -72,7 +75,7 @@ class CartController extends CommonController
            $num = 1;
            $data['Cart'] = ['productid' => $productid, 'productnum' => $num, 'price' => $price, 'userid' => $userid];     
        }
-
+        //购物车 数据查找
        $model = Cart::find()->where('productid = :pid and userid = :uid',[':pid'=>$data['Cart']['productid'],':uid'=>$data['Cart']['userid']])->one();
 
        if (!$model) {
@@ -93,9 +96,11 @@ class CartController extends CommonController
      */
      public function actionMod()
     {
+      //ajax 通信GET方法获取数字
       $cartid = Yii::$app->request->get('cartid');
       $productnum = Yii::$app->request->get('productnum');
       // echo $cartid;exit();
+      // 刷新数据
       Cart::updateAll(['productnum'=>$productnum],'cartid = :cid',
         [':cid' => $cartid]);
       //jquery代码有问题 无法区分不同的购物车 只会给第一个购物车添加
@@ -110,6 +115,7 @@ class CartController extends CommonController
     public function actionDel()
     {
       $cartid = Yii::$app->request->get('cartid');
+      // 删除数据
       Cart::deleteAll('cartid = :cid',[':cid'=>$cartid]);
       return $this->redirect(['cart/index']);
     }

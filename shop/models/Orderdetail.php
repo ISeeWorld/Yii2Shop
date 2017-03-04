@@ -4,28 +4,37 @@ namespace app\models;
 use Yii;
 use yii\db\ActiveRecord;
 
-class Cart extends ActiveRecord
+class Orderdetail extends ActiveRecord
 {
       public static function tableName()
       {
-        return "{{%cart}}";
+        return "{{%orderdetail}}";
       }
 
 
       public function rules()
       {
         return [
-        [['productid','productnum','userid','price'],'required'],
-        ['createtime','safe']
+    
         ];
       }
 
 
       public function attributeLabels()
       {
-        return [];
+        return [
+
+        ];
       }
     
+
+    public function add($data)
+    {
+        if ($this->load($data)) {
+          return true;
+        }
+        rerurn false;
+    }
 }
 
 

@@ -87,6 +87,7 @@ CREATE TABLE IF NOT EXISTS `shop_cart`(
 )ENGINE=INNODB DEFAULT CHARSET='utf8';
 
 ==================订单的数据表 2017年3月2日 22:04:06====================
+
 DROP TABLE IF EXISTS `shop_order`;
 CREATE TABLE IF NOT EXISTS `shop_order`(
    `orderid` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -134,4 +135,4 @@ CREATE TABLE IF NOT EXISTS `shop_address`(
   `userid` BIGINT UNSIGNED NOT NULL DEFAULT '0',
   `createtime` INT UNSIGNED NOT NULL DEFAULT '0',
   KEY shop_address_userid(`userid`)
-)ENGINE=InnoDB DEFAULT CHARSET='UTF8'
+)ENGINE=InnoDB DEFAULT CHARSET='UTF8';

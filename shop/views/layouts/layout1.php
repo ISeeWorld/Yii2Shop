@@ -549,7 +549,8 @@
     <script src="assets/js/jquery.customSelect.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <script>
+
+    <script type="application/javascript">
         $("#createlink").click(function(){
             $(".billing-address").slideDown();
         });
@@ -574,7 +575,7 @@
             $(".value.pull-right.ordertotal span").html(p + "");
         });
 
-        $(".plus").click(function(){
+        $(".minus").click(function(){
             var cartid = $("input[name=productnum]").attr('id');
             var num = parseInt($("input[name=productnum]").val()) + 1;
             var total = parseFloat($(".value.pull-right span").html());
