@@ -21,6 +21,7 @@ class CommonController extends Controller
      */
      public function init()
     {
+     // $this->enableCsrfValidation = false;
      //获取菜单分类数据
      $menu = Category::getMenu();
      $this->view->params['menu'] = $menu;

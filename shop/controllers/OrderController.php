@@ -6,10 +6,11 @@ use app\models\User;
 use app\models\Category;
 use app\models\Order;
 use app\models\Orderdetail;
+use Yii;
 
-class OrderController extends Controller
+class OrderController extends CommonController
 {
-    public $layout = false;
+    // public $layout = false;
     public function actionCheck()
     {
         $this->layout = "layout1";
@@ -36,27 +37,31 @@ class OrderController extends Controller
         try{
            if (Yii::$app->request->isPost) {
             $postdata = Yii::$app->request->post();
+            var_dump($postdata);
+            // exit();
             $ordermodel = new Order;
+            // $ordermodel->scenario = 'add';
             $ordermodel->scenario = 'add';
             $username = Yii::$app->session['loginname'];
+            // echo $username;
             $usermodel= User::find()->where('username= :name or useremail = :mail',[':user'=>$username,':email'=>$username])->one();
-            if (!usermodel) {
-               throw new Exception("无此用户");        
+            if (!$usermodel) {
+               throw new \Exception("无此用户");        
             }
             $userid = $usermodel->userid;
             $ordermodel->userid = $userid;
             $ordermodel->status =  Order::CREATEORDER;
             $ordermodel->createtime = time();
-
-            if(!$ordermodel){
-                throw new Exception("订单保存错误");
+            // 保存数据
+            if(!$ordermodel->save()){
+                throw new \Exception("订单保存错误");
             }
             // 新用法 获取用户的主键值
             $orderid = $ordermodel->getPrimaryKey();
             //数组遍历 如何进行 
             //2017年3月4日 18:08:38
             //数组知识必须补充
-            foreach ($postdata as $pro) {
+            foreach ($postdata['OrderDetail'] as $pro) {
                $detailmodel = new Orderdetail;
                $pro['orderid'] = $orderid;
                $pro['createtime'] = time();
@@ -66,9 +71,9 @@ class OrderController extends Controller
                }
             }
             //失败后要删除
-            Cart::deleteAll('productid = :pid' , [':pid' => $product['productid']]);
+            Cart::deleteAll('productid = :pid' , [':pid' => $pro['productid']]);
             //更新数据 2017年3月4日 18:15:04
-            Product::updateAllCounters(['num' => -$product['productnum']], 'productid = :pid', [':pid' => $product['productid']]);
+            Product::updateAllCounters(['num' => -$pro['productnum']], 'productid = :pid', [':pid' => $pro['productid']]);
 
            }
            $transaction->commit();
@@ -81,12 +86,37 @@ class OrderController extends Controller
         }
 
         return $this->redirect(['order/check', 'orderid' => $orderid]);
-
+        // return $this->redirect(['order/check']);
     }
 
-
-
-
-
-
+    
 }
+
+
+
+/**
+ * BUG 修复记录 
+ * 出现故障首先考虑 系统结构流程 系统把握 分解过程之后分析
+ * 视图出现问题很难查找 前端技术薄弱
+ * 学会使用r=debug 工具
+ * 2017年3月5日 21:51:47
+ * _csrf很奇怪
+ * 需要好好研究
+ * 1、学会R=DEBUG
+ * 2、定时清除缓存 F9
+ * 3、写代码前先写好思路 理清细节 写完汉字代码  在开始写CODE 
+ * 并且测试要有成熟的思路 办法 工具 不要乱猜想 一个环节一个环节进行测试
+ * 4、前端视图多出问题 且隐蔽 以后重点注意 不要放松
+ * 
+ *<?php $form = ActiveForm::begin([
+            'action' => yii\helpers\Url::to(['order/add']),
+        ]) ?>
+        <!-- ========================================= CONTENT ========================================= -->
+        <div class="col-xs-12 col-md-9 items-holder no-margin">
+        <?php $total=0; $pnum=0 ;  ?>
+            <?php foreach ($data as $k => $v) : ?>
+            <input type="hidden" name="OrderDetail[<?php echo $k?>][productid]" value="<?php echo $v['productid'] ?>">
+            <input type="hidden" name="OrderDetail[<?php echo $k?>][price]" value="<?php echo $v['price'] ?>">
+            <input type="hidden" name="OrderDetail[<?php echo $k?>][productnum]" value="<?php echo $v['productnum'] ?>">
+            <div class="row no-margin cart-item">
+ */
