@@ -33,7 +33,7 @@ class Orderdetail extends ActiveRecord
         if ($this->load($data)) {
           return true;
         }
-        rerurn false;
+        return false;
     }
 }
 

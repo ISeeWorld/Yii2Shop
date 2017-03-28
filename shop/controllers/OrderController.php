@@ -11,6 +11,7 @@ use Yii;
 class OrderController extends CommonController
 {
     // public $layout = false;
+    // public $enableCsrfValidation = false;
     public function actionCheck()
     {
         $this->layout = "layout1";
@@ -37,17 +38,21 @@ class OrderController extends CommonController
         try{
            if (Yii::$app->request->isPost) {
             $postdata = Yii::$app->request->post();
-            var_dump($postdata);
+            // var_dump($postdata);
             // exit();
             $ordermodel = new Order;
-            // $ordermodel->scenario = 'add';
             $ordermodel->scenario = 'add';
             $username = Yii::$app->session['loginname'];
-            // echo $username;
-            $usermodel= User::find()->where('username= :name or useremail = :mail',[':user'=>$username,':email'=>$username])->one();
+            echo $username;
+            // $usermodel= User::find()->where('username= :name or useremail = :mail',[':user'=>$username,':email'=>$username])->one();
+            $usermodel = User::find()->where('username = :name or useremail = :email', [':name' => Yii::$app->session['loginname'], ':email' => Yii::$app->session['loginname']])->one();
+
             if (!$usermodel) {
                throw new \Exception("无此用户");        
             }
+            echo 'user ok';
+            
+
             $userid = $usermodel->userid;
             $ordermodel->userid = $userid;
             $ordermodel->status =  Order::CREATEORDER;
@@ -55,9 +60,11 @@ class OrderController extends CommonController
             // 保存数据
             if(!$ordermodel->save()){
                 throw new \Exception("订单保存错误");
+                echo 'order failed!';
             }
             // 新用法 获取用户的主键值
             $orderid = $ordermodel->getPrimaryKey();
+            echo $orderid;
             //数组遍历 如何进行 
             //2017年3月4日 18:08:38
             //数组知识必须补充
@@ -66,15 +73,17 @@ class OrderController extends CommonController
                $pro['orderid'] = $orderid;
                $pro['createtime'] = time();
                $data['orderDetail'] = $pro;
+               $detailmodel->add($data);
                if (!$detailmodel->add($data)) {
-                 throw new Exception("dteail error!");
+                 throw new \Exception("dteail error!");
                }
-            }
-            //失败后要删除
-            Cart::deleteAll('productid = :pid' , [':pid' => $pro['productid']]);
+               // echo 'foreach';
+                           //失败后要删除
+               // Cart::deleteAll('productid = :pid' , [':pid' => $pro['productid']]);
             //更新数据 2017年3月4日 18:15:04
-            Product::updateAllCounters(['num' => -$pro['productnum']], 'productid = :pid', [':pid' => $pro['productid']]);
-
+               Product::updateAllCounters(['num' => -$pro['productnum']], 'productid = :pid', [':pid' => $pro['productid']]);
+               echo 'failed';
+            }
            }
            $transaction->commit();
            // 提交数据
@@ -83,6 +92,7 @@ class OrderController extends CommonController
             return $transaction->rollback();
             // 回滚
             $this->redirect(['cart/index']);
+            // echo "rollback!";
         }
 
         return $this->redirect(['order/check', 'orderid' => $orderid]);

@@ -15,7 +15,7 @@
             </div><!-- /.single-product-gallery-item -->
             <?php $i = 2 ?>
             <?php foreach((array)json_decode($product['pics'], true) as $k=>$pic): ?>
-            <div class="single-product-gallery-item" id="slide<?php echo $i ?>">
+            <div class="single-product-gallery-item" id="slide<?php echo $i ?>">class="minus"
                 <a data-rel="prettyphoto" href="http://<?php echo $pic ?>-small">
                     <img class="img-responsive" alt="" src="<?php echo $pic ?>-coverbig" />
                 </a>
@@ -75,6 +75,7 @@
             <div class="le-quantity">
                 <a class="minus" href="#reduce"></a>
                 <input name="productnum" readonly="readonly" type="text" value="1" />
+                <!-- //此处需要修正 -->
                 <a class="plus" href="#add"></a>
             </div>
             <input type="hidden" name="price" value="<?php echo $product['issale'] == '1'?$product['saleprice']:$product['price'] ?>">

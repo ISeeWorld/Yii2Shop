@@ -575,7 +575,7 @@
             $(".value.pull-right.ordertotal span").html(p + "");
         });
 
-        $(".minus").click(function(){
+        $(".plus").click(function(){
             var cartid = $("input[name=productnum]").attr('id');
             var num = parseInt($("input[name=productnum]").val()) + 1;
             var total = parseFloat($(".value.pull-right span").html());
