@@ -5,13 +5,14 @@ use yii\web\Controller;
 use app\models\User;
 use app\models\Category;
 use app\models\Order;
+use app\models\Product;
 use app\models\Orderdetail;
 use Yii;
 
 class OrderController extends CommonController
 {
     // public $layout = false;
-    // public $enableCsrfValidation = false;
+    
     public function actionCheck()
     {
         $this->layout = "layout1";
@@ -38,21 +39,16 @@ class OrderController extends CommonController
         try{
            if (Yii::$app->request->isPost) {
             $postdata = Yii::$app->request->post();
-            // var_dump($postdata);
-            // exit();
             $ordermodel = new Order;
             $ordermodel->scenario = 'add';
             $username = Yii::$app->session['loginname'];
-            echo $username;
-            // $usermodel= User::find()->where('username= :name or useremail = :mail',[':user'=>$username,':email'=>$username])->one();
-            $usermodel = User::find()->where('username = :name or useremail = :email', [':name' => Yii::$app->session['loginname'], ':email' => Yii::$app->session['loginname']])->one();
+            // echo 'username:'.$username.'<br>';
+            $usermodel= User::find()->where('username= :name or useremail = :email',[':name'=>$username,':email'=>$username])->one();
 
             if (!$usermodel) {
-               throw new \Exception("无此用户");        
+               throw new \Exception("无此用户");
+               // echo 'user bad';        
             }
-            echo 'user ok';
-            
-
             $userid = $usermodel->userid;
             $ordermodel->userid = $userid;
             $ordermodel->status =  Order::CREATEORDER;
@@ -60,11 +56,9 @@ class OrderController extends CommonController
             // 保存数据
             if(!$ordermodel->save()){
                 throw new \Exception("订单保存错误");
-                echo 'order failed!';
             }
             // 新用法 获取用户的主键值
             $orderid = $ordermodel->getPrimaryKey();
-            echo $orderid;
             //数组遍历 如何进行 
             //2017年3月4日 18:08:38
             //数组知识必须补充
@@ -72,38 +66,33 @@ class OrderController extends CommonController
                $detailmodel = new Orderdetail;
                $pro['orderid'] = $orderid;
                $pro['createtime'] = time();
-               $data['orderDetail'] = $pro;
-               $detailmodel->add($data);
+               $data['OrderDetail'] = $pro;
                if (!$detailmodel->add($data)) {
-                 throw new \Exception("dteail error!");
+                 throw new \Exception("detail error!");
                }
-               // echo 'foreach';
-                           //失败后要删除
-               // Cart::deleteAll('productid = :pid' , [':pid' => $pro['productid']]);
-            //更新数据 2017年3月4日 18:15:04
-               Product::updateAllCounters(['num' => -$pro['productnum']], 'productid = :pid', [':pid' => $pro['productid']]);
-               echo 'failed';
-            }
+               Product::updateAllCounters(['num' => +$pro['productnum']], 'productid = :pid', [':pid' => $pro['productid']]);
            }
+           }
+           //注意检查数据插入的类型  调试尝试注意去掉 TRY CATCH语句 
+           //防止错误被包裹 无法查处
+           //2017年4月19日 13:46:08
            $transaction->commit();
            // 提交数据
         }
         catch(\Exception $e){
-            return $transaction->rollback();
+            $transaction->rollback();
             // 回滚
             $this->redirect(['cart/index']);
             // echo "rollback!";
         }
 
-        return $this->redirect(['order/check', 'orderid' => $orderid]);
-        // return $this->redirect(['order/check']);
+       return $this->redirect(['order/check', 'orderid' => $orderid]);
     }
 
     
 }
 
-
-
+   
 /**
  * BUG 修复记录 
  * 出现故障首先考虑 系统结构流程 系统把握 分解过程之后分析

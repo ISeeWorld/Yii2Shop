@@ -19,6 +19,7 @@ class CommonController extends Controller
      * 2017年2月23日 23:19:11
      * @return [type] [description]
      */
+     public $enableCsrfValidation = false;
      public function init()
     {
      // $this->enableCsrfValidation = false;
