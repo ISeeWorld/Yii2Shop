@@ -7,17 +7,56 @@ use app\models\Category;
 use app\models\Order;
 use app\models\Product;
 use app\models\Orderdetail;
+use app\models\Address;
 use Yii;
 
+// 搞清楚2个问题
+// 1.数据库数据交互的细节 看图 同时搞清楚MVC的细节
+// 2.数组的遍历循环等具体环节问题
 class OrderController extends CommonController
 {
     // public $layout = false;
     
     public function actionCheck()
     {
+        if (!Yii::$app->session['isLogin']) {
+          return $this->redirect(['member/auth']);
+        }
+        // 判明是否登录
+        $orderid = Yii::$app->request->get('orderid');
+        // $status = Order::find()->where('userid = :id',['id'=>$orderid])->one()->status;
+        $status = Order::find()->where('orderid = :oid', [':oid' => $orderid])->one()->status;
+        if ($status != Order::CREATEORDER && $status != Order::CHECKORDER) {
+            return $this->redirect(['order/index']);
+        }
+        // 获取订单ID
+        $username = Yii::$app->session['loginname'];
+        $usermodel= User::find()->where('username= :name or useremail = :email',[':name'=>$username,':email'=>$username])->one();
+        if (!$usermodel) {
+               throw new \Exception("无此用户");
+               // echo 'user bad';        
+        }
+        $userid = $usermodel->userid;
+        //得到用户ID
+        $addresses = Address::find()->where('userid = :uid', [':uid' => $userid])->asArray()->all();
+        //获取用户地址
+        $details = OrderDetail::find()->where('orderid = :oid', [':oid' => $orderid])->asArray()->all();
+        // 获取订单详情
+        $data = [];
+        foreach($details as $detail) {
+            $model = Product::find()->where('productid = :pid' , [':pid' => $detail['productid']])->one();
+            $detail['title'] = $model->title;
+            $detail['cover'] = $model->cover;
+            $data[] = $detail;
+        }
+        // 遍历保存数据
+        $express = Yii::$app->params['express'];
+        $expressPrice = Yii::$app->params['expressPrice'];
+        // 获取数组情况
         $this->layout = "layout1";
-        return $this->render('check');
+        return $this->render("check", ['express' => $express, 'expressPrice' => $expressPrice, 'addresses' => $addresses, 'products' => $data]);
     }
+
     public function actionIndex()
     {
         $this->layout = "layout2";
