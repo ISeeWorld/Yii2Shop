@@ -36,7 +36,7 @@ class AddressController extends CommonController
            $post['Address']= $post['address1'].$post['address2'];
            $data['Address']= $post;
            $addressmodel = new Address;
-           // var_dump($data);
+           //var_dump($data);
            // $addressmodel->add($data);
            if (!$addressmodel->add($data)){
                throw new \Exception("保存数据失败");
@@ -45,8 +45,6 @@ class AddressController extends CommonController
         }
         return $this->redirect($_SERVER['HTTP_REFERER']);
     }
-
-
 
     public function actionDel()
     {
@@ -65,6 +63,7 @@ class AddressController extends CommonController
         Address::deleteAll('addressid = :aid',[':aid'=>$addressid]);
         return $this->redirect($_SERVER['HTTP_REFERER']);
     }
+
 }
 
 

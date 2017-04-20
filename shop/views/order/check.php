@@ -169,4 +169,10 @@
 </section><!-- /#checkout-page -->
 <!-- ========================================= CONTENT : END ========================================= -->      <!-- ============================================================= FOOTER ============================================================= -->
 <input type="hidden" value="<?php echo (int)\Yii::$app->request->get("orderid"); ?>" name="orderid">
+<?php foreach($addresses as $key => $address): ?>
+<input type="hidden" value="<?php echo $address['addressid']; ?>" name="addressid">
+<?php endforeach; ?>
+<!-- //问题隐患 所在 数据无法提交  -->
+<!-- 实际上存在的隐蔽问题常常就在视图和数据模型模型之中 -->
+<!-- 2017年4月20日 19:18:26 -->
 <?php ActiveForm::end(); ?>

@@ -127,10 +127,77 @@ class OrderController extends CommonController
 
        return $this->redirect(['order/check', 'orderid' => $orderid]);
     }
+    /**
+     * actionconfirm
+     * 2017年4月20日 16:34:19
+     * @return [type] [description]
+     */
+    public function actionConfirm()
+    {
+     
+        if (!Yii::$app->session['isLogin']) {
+          return $this->redirect(['member/auth']);
+        }
 
-    
+        try {
+        // 获取订单ID
+        $username = Yii::$app->session['loginname'];
+        $userid= User::find()->where('username= :name or useremail = :email',[':name'=>$username,':email'=>$username])->one()->userid;
+        // $addressid = Address::find()->where('userid = :uid',[':uid']=>$userid)->getPrimaryKey();
+         $addressmodel = new Address;
+         $addressid = $addressmodel->getPrimaryKey();
+        if (!$userid) {
+               throw new \Exception("无此用户");
+               // echo 'user bad';        
+           }
+        if (Yii::$app->request->ispost) {
+                $post = Yii::$app->request->post();
+                $orderid = $post['orderid'];
+                $model = Order::find()->where('userid = :uid and orderid = :oid',[':uid'=>$userid,':oid'=>$orderid])->one();
+                if (!$model) {
+                    throw new Exception("订单错误！");              
+                }
+                $details = OrderDetail::find()->where('orderid = :oid',[':oid'=>$orderid])->all();
+                $amount = 0;
+                foreach ($details as $k) {
+                    $amount += $k->productnum * $k->price;
+                }
+                if ($amount<=0) {
+                    throw new Exception("价格不能小于零");    
+                }
+                $expressPrice = Yii::$app->params['expressPrice'][$post['expressid']];
+                //参数问题 具体的参数如何出处理
+                if ($expressPrice<0) {
+                    throw new Exception("快递价格不能小于零"); 
+                }
+
+                $model->scenario = "update";
+                $post['status'] = Order::CHECKORDER;
+                $amount += $expressPrice;
+                $post['amount'] = $amount;
+                // $post['addressid'] = $addressid;
+                $data['Order']  = $post;
+                // var_dump($data);
+                // echo $addressid;
+                // if (empty($post['addressid'])) {
+                // return $this->redirect(['order/pay', 'orderid' => $post['orderid'], 'paymethod' => $post['paymethod']]);
+                // }
+
+                if ($model->load($data) && $model->save()) {
+                    return $this->redirect(['order/pay', 'orderid' => $post['orderid'], 'paymethod' => $post['paymethod']]);
+                }else{
+                    throw new \Exception("data save error!");                   
+                }
+            }else{
+               throw new \Exception("提交方式不对！");
+            }
+
+        } catch (Exception $e) {
+            return $this->redirect(['index/index']);  
+        }  
+
+        }
 }
-
    
 /**
  * BUG 修复记录 
