@@ -197,6 +197,29 @@ class OrderController extends CommonController
         }  
 
         }
+
+    /**
+     * 阿里云支付宝问题
+     * 2017年4月21日 22:27:18
+     * @return [type] [description]
+     */
+      public function actionPay()
+    {
+        try{
+            if (Yii::$app->session['isLogin'] != 1) {
+                throw new \Exception();
+            }
+            $orderid = Yii::$app->request->get('orderid');
+            $paymethod = Yii::$app->request->get('paymethod');
+            if (empty($orderid) || empty($paymethod)) {
+                throw new \Exception();
+            }
+            if ($paymethod == 'alipay') {
+                return Pay::alipay($orderid);
+            }
+        }catch(\Exception $e) {}
+        return $this->redirect(['order/index']);
+    }
 }
    
 /**
