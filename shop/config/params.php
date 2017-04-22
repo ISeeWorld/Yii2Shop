@@ -13,6 +13,7 @@ return [
     'mypageSize'   => [
         'manage' => 6,
         'user'   => 10,
+        'order'  =>6,
     ],
     'defaultValue' => [
         'avatar' => 'assets/admin/img/contact-img.png',

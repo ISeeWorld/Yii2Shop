@@ -46,7 +46,21 @@ class Order extends ActiveRecord
       {
         return [];
       }
-    
+
+      /**
+       * 获取商品及订单详细信息
+       * 2017年4月22日 12:14:44
+       */    
+      public static function getDetails($order)
+      {
+        $oderdetails = OrderDetail::find()->where('orderid = :oid',[':oid'=>$order->orderid])->all();
+        $data = [];
+        // var_dump($orderdetails);
+        foreach ($orderdetails as $detail) {
+              
+        }
+        return orders;
+      }
 }
 
 

@@ -28,8 +28,8 @@ class AddressController extends CommonController
         if (!$userid) {
             throw new \Exception("无此用户");       
         }
-        echo $userid;
-        echo gettype($userid);
+        // echo $userid;
+        // echo gettype($userid);
         if (Yii::$app->request->isPost) {
            $post = Yii::$app->request->post();
            $post['userid'] = (int)$userid;

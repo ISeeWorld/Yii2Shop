@@ -8,6 +8,8 @@ use app\models\Order;
 use app\models\Product;
 use app\models\Orderdetail;
 use app\models\Address;
+use app\models\Pay;
+
 use Yii;
 
 // 搞清楚2个问题
