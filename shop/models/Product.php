@@ -6,7 +6,7 @@ use yii\db\ActiveRecord;
 
 class Product extends ActiveRecord
 {
-    
+  public $cate;
   const AK = 'f1NQz9_Zmd3zS0a079YJ1-HF3tLj3Ce3I9ekXtMF';
   const SK = 'ciIWIlTJg5kIc2NbqXBgQyvYdJR8fxEITcIUzOFT';
   const DOMAIN = 'olknm0wzh.bkt.clouddn.com';

@@ -59,11 +59,7 @@ class OrderController extends CommonController
         return $this->render("check", ['express' => $express, 'expressPrice' => $expressPrice, 'addresses' => $addresses, 'products' => $data]);
     }
 
-    public function actionIndex()
-    {
-        $this->layout = "layout2";
-        return $this->render('index');
-    }
+
     /**
      * 用户添加操作
      * 2017年3月4日 16:02:49
@@ -221,6 +217,30 @@ class OrderController extends CommonController
             }
         }catch(\Exception $e) {}
         return $this->redirect(['order/index']);
+    }
+
+    /**
+     * 首页
+     * @return [type] [description]
+     */
+    public function actionIndex()
+    {
+        $this->layout = "layout2";
+              if (!Yii::$app->session['isLogin']) {
+          return $this->redirect(['member/auth']);
+        }
+        // 判明是否登录
+        $orderid = Yii::$app->request->get('orderid');
+        // 获取订单ID
+        $username = Yii::$app->session['loginname'];
+        $usermodel= User::find()->where('username= :name or useremail = :email',[':name'=>$username,':email'=>$username])->one();
+        if (!$usermodel) {
+               throw new \Exception("无此用户");
+               // echo 'user bad';        
+        }
+        $orders = Order::getProducts($usermodel->userid);
+        return $this->render("index", ['orders' => $orders]);
+        
     }
 }
    

@@ -14,6 +14,7 @@ class Order extends ActiveRecord
 {
       public $username;
       public $product;
+      public $products;
       public $address = "";
       public $zhstatus;
       const CREATEORDER = 0;
@@ -113,10 +114,35 @@ class Order extends ActiveRecord
          $order->zhstatus = self::$status[$order->status];
 
         }
-        
-
         return $orders;
       }
+      /**
+       * 获取商品
+       * 2017年4月23日 15:46:50
+       * @param  [type] $userid [description]
+       * @return [type]         [description]
+       */
+      public static function getProducts($userid)
+    {
+        $orders = self::find()->where('status > 0 and userid = :uid', [':uid' => $userid])->orderBy('createtime desc')->all();
+        foreach($orders as $order) {
+            $details = OrderDetail::find()->where('orderid = :oid', [':oid' => $order->orderid])->all();
+            $products = [];
+            foreach($details as $detail) {
+                $product = Product::find()->where('productid = :pid', [':pid' => $detail->productid])->one();
+                if (empty($product)) {
+                    continue;
+                }
+                $product->num = $detail->productnum;
+                $product->price = $detail->price;
+                $product->cate = Category::find()->where('cateid = :cid', [':cid' => $product->cateid])->one()->title;
+                $products[] = $product;
+            }
+            $order->zhstatus = self::$status[$order->status];
+            $order->products = $products;
+        }
+        return $orders;
+    }
 }
 
 
