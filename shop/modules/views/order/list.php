@@ -145,26 +145,62 @@ use yii\widgets\LinkPager;
                                 <?php foreach($orders as $o):?>
                                 <tr class="first">
                                 
-                                    <td><?php echo $o->userid ;?></td>
-                                    <td><?php echo $o->userid;?></td>
-                                    <td>北京市朝阳区某某街道</td>
-                                    <td>包邮</td>
-                                    <td>0.01</td>
-                                    <td>1 x
-                                        <a href="/index.php?r=product%2Fdetail&productid=4">长裙</a></td>
+                                    <td><?php echo $o->orderid ;?></td>
+                                    <td><?php echo $o->username;?></td>
+                                    <td><?php echo $o->address;?></td>
+                                    <td><?php
+                                    if (array_key_exists($o->expressid, \Yii::$app->params['express'])) {
+                                        echo \Yii::$app->params['express'][$o->expressid];
+                                    }
+                                     ?> </td>
+                                    <td><?php echo $o->amount;?></td>
                                     <td>
-                                        <span class="label label-success">订单完成</span></td>
+                                    <?php foreach($o->product as $product): ?>
+                                    <?php echo $product->num ?> x <a href="<?php echo yii\helpers\Url::to(['/product/detail', 'productid' => $product->productid]) ?>"><?php echo $product->title ?></a>
+                                    <?php endforeach; ?>
+                                </td>
+                                <?php
+                                if (in_array($o->status, [0])) {
+                                    $info = "error";
+                                }
+
+                                if (in_array($o->status, [100,202])) {
+                                    $info = "info";
+                                }
+                                
+                                if (in_array($o->status, [201])) {
+                                    $info = "warning";
+                                }
+
+                                if (in_array($o->status, [220,260])) {
+                                    $info = "success";
+                                }
+                               ?>
+                                    <td>
+                                      <span class="label label-<?php echo $info ?>"> <?php echo $o->zhstatus ?> </span>
+
+                                      <?php if ($o->status == 202):?>
+                                      <td class="align-right">   
+                                        <a href="<?php echo yii\helpers\Url::to(['order/send', 'orderid' => $o->orderid]) ?>">发货</a>
+                                      </td>
+
+                                    <?php endif;?>
                                     <td class="align-right">
-                                        <a href="/index.php?r=admin%2Forder%2Fdetail&orderid=2">查看</a></td>                              
+                                        <a href="<?php echo yii\helpers\Url::to(['order/detail', 'orderid' => $o->orderid]) ?>">查看</a></td>                              
 
                                 </tr>
                                 <?php endforeach;?>
                             </tbody>
                         </table>
-                <?= LinkPager::widget(['pagination' => $pager]); ?>
                     </div>
                     <!-- <div class="pagination pull-right"></div> -->
-               
+               <div class="pagination pull-right">
+                    <?php echo yii\widgets\LinkPager::widget([
+                        'pagination' => $pager,
+                        'prevPageLabel' => '&#8249;',
+                        'nextPageLabel' => '&#8250;',
+                    ]) ?>
+                </div>
                     <!-- end users table --></div>
             </div>
 

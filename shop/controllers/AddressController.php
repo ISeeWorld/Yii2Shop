@@ -33,7 +33,8 @@ class AddressController extends CommonController
         if (Yii::$app->request->isPost) {
            $post = Yii::$app->request->post();
            $post['userid'] = (int)$userid;
-           $post['Address']= $post['address1'].$post['address2'];
+           $post['address']= $post['address1'].$post['address2'];
+           //键值错误 学习调试方法
            $data['Address']= $post;
            $addressmodel = new Address;
            //var_dump($data);

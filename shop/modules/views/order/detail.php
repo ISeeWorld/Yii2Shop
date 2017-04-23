@@ -113,17 +113,26 @@
                     <div class="row-fluid header">
                         <h3>订单详情</h3></div>
                     <div class="row-fluid">
-                        <p>订单编号：2</p>
-                        <p>下单用户：zhangsan</p>
-                        <p>收货地址：北京市朝阳区某某街道</p>
-                        <p>订单总价：0.01</p>
-                        <p>快递方式：包邮</p>
-                        <p>快递编号：807209844896</p>
-                        <p>订单状态：订单完成</p>
+                    
+                        <p>订单编号：<?php echo $data['orderid']; ?></p>
+                        <p>下单用户：<?php echo $data['username']; ?></p>
+                        <p>收货地址：<?php echo $data['address'];?></p>
+                        <p>订单总价：<?php echo $data['amount'];?></p>
+                        <p>快递方式：<?php echo $data['express'];?></p>
+                        <p>快递编号：<?php echo $data['expressno'];?></p>
+                        <p>订单状态：<?php echo $data['status'];?></p>
                         <p>商品列表：</p>
                         <p>
                             <div style="display:inline">
-                                <img src="http://o7zgluxwg.bkt.clouddn.com/57663c9bd20ec-piclistsmall">1 x 长裙</div></p>
+                                <img src="http://<?php echo $data['cover'] ?>-small">
+                                <?php
+                                echo $data['num'] ?> x <a href="<?php echo yii\helpers\Url::to(['/product/detail', 'productid' => $data['productid']]) ?>"><?php echo $data['productid'] ?>
+                                </div>
+                            </a>
+                        </p>
+
+                  
+
                     </div>
                 </div>
             </div>
