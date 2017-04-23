@@ -6,12 +6,13 @@ use app\models\User;
 use Yii;
 use yii\data\Pagination;
 use yii\web\Controller;
+use app\modules\controllers\CommonController;
 
 /**
  *新的控制器
  *2017年1月4日
  */
-class UserController extends Controller
+class UserController extends CommonController
 {
 /**
  * 在后台自动添加新用户

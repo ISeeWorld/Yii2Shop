@@ -7,12 +7,13 @@ use yii\data\pagination;
 use app\models\User;
 use app\models\Address;
 use app\models\Product;
+use app\modules\controllers\CommonController;
 
 
 use Yii;
 
 
-class OrderController extends Controller
+class OrderController extends CommonController
 {
     /**
      * 显示列表 

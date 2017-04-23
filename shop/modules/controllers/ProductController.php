@@ -7,7 +7,9 @@ use app\models\Product;
 use app\models\Category;
 use crazyfd\qiniu\Qiniu;
 use yii\data\Pagination;
-class ProductController extends Controller
+use app\modules\controllers\CommonController;
+
+class ProductController extends CommonController
 {
     /**
      * 商品展示

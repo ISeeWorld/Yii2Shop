@@ -9,6 +9,7 @@ use app\models\Product;
 use app\models\Orderdetail;
 use app\models\Address;
 use app\models\Pay;
+use dzer\express\Express;
 
 use Yii;
 
@@ -241,6 +242,32 @@ class OrderController extends CommonController
         $orders = Order::getProducts($usermodel->userid);
         return $this->render("index", ['orders' => $orders]);
         
+    }
+    /**
+     * 快递单号
+     * 2017年4月23日 16:07:33
+     * @return [type] [description]
+     */
+    public function actionGetexpress()
+    {
+        $expressno = Yii::$app->request->get('expressno');
+        $res = Express::search($expressno);
+        echo $res;
+        exit;
+    }
+    /**
+     * 接收货物的处理
+     * @return [type] [description]
+     */
+    public function actionReceived()
+    {
+        $orderid = Yii::$app->request->get('orderid');
+        $order = Order::find()->where('orderid = :oid', [':oid' => $orderid])->one();
+        if (!empty($order) && $order->status == Order::SENDED) {
+            $order->status = Order::RECEIVED;
+            $order->save();
+        }
+        return $this->redirect(['order/index']);
     }
 }
    

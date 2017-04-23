@@ -4,8 +4,9 @@ namespace app\modules\controllers;
 use app\models\Category;
 use Yii;
 use yii\web\Controller;
+use app\modules\controllers\CommonController;
 
-class CategoryController extends Controller
+class CategoryController extends CommonController
 {
    /**
     * 分类列表显示函数
